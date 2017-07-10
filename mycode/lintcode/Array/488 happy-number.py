@@ -33,3 +33,30 @@ class Solution(object):
             n = n / 10
         return sum
 # 方法二：hash
+class Solution_hash(object):
+    def isHappy(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        hash = {}
+        while n != 1:
+            if hash.has_key(n):
+                return False
+            else:
+                hash[n] = 1
+                n = self.digit_ss(n)
+        return True
+    def digit_ss(self,n):
+        sum = 0
+        while n != 0:
+            tmp = n % 10
+            sum += tmp**2
+            n = n / 10
+        return sum
+
+
+if __name__ == '__main__':
+    n= 19
+    s = Solution_hash()
+    print s.isHappy(n)
