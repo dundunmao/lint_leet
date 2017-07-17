@@ -11,11 +11,9 @@ class ListNode:
         self.val = x
         self.next = None
 
-class Solution:
-    # @param l1: the first list
-    # @param l2: the second list
-    # @return: the sum list of l1 and l2
-    def addLists2(self, l1, l2):
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+
         # Write your code here
         num1 = self.converse(l1)
         num2 = self.converse(l2)
@@ -24,6 +22,7 @@ class Solution:
         dummy = ListNode(0)
         cur = dummy
         length = len(str(num))-1
+        # recorde = len(str(num))
         while length!=-1:
             value = num/10**length
             num = num%10**length
@@ -34,17 +33,8 @@ class Solution:
 
 
     def converse(self, ll):
-        # get the length
-        cur = ll
-        leng = 0
-        while cur is not None:
-            leng +=1
-            cur = cur.next
-        cur = ll
-        power = leng - 1
-        sum = 0
-        while cur is not None:
-            sum += cur.val*10**power
-            power -= 1
-            cur = cur.next
-        return sum
+        num = 0
+        while ll:
+            num = (num*10)+ll.val
+            ll = ll.next
+        return num

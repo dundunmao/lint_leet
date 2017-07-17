@@ -28,7 +28,7 @@ class Solution:
             if pre.next.val == pre.next.next.val:
                 val = pre.next.val
                 while pre.next is not None and pre.next.val == val:
-                    # 把 pre.next 删掉,一直删掉没有node的值为val
+                    # 把 pre.next 删掉,一直删到没有node的值为val
                     pre.next = pre.next.next
             else:
                 pre = pre.next

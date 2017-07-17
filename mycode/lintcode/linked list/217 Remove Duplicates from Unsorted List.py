@@ -6,7 +6,6 @@ class ListNode(object):
         self.val = val
         self.next = next
 
-
 class Solution:
     # @param head, a ListNode
     # @return a ListNode

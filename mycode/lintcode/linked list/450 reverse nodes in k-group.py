@@ -46,9 +46,9 @@ class Solution:
             pre_m = node_m
             node_m = post_n
         # 打印检查
-        while dummy.next is not None:
-            print dummy.next.val
-            dummy = dummy.next
+        # while dummy.next is not None:
+        #     print dummy.next.val
+        #     dummy = dummy.next
         return dummy.next
 
     def length(self, head):
@@ -58,6 +58,33 @@ class Solution:
             le += 1
         return le
 
+
+class Solution_leet(object):
+    def reverseKGroup(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        题：每k个数reverse一下，类似24Swap Nodes in Pairs每2个数reverse一下
+
+        """
+        curr = head
+        count = 0;
+        while curr != None and count != k:  # find the k+1 node
+            curr = curr.next
+            count += 1
+        if count == k:  # if k+1 node is found
+            curr = self.reverseKGroup(curr, k)  # reverse list with k+1 node as head
+            # head - head-pointer to direct part,
+            # curr - head-pointer to reversed part;
+            while (count > 0):  # reverse current k-group:
+                tmp = head.next  # tmp - next head in direct part
+                head.next = curr  # preappending "direct" head to the reversed list
+                curr = head  # move head of reversed part to a new node
+                head = tmp  # move "direct" head to the next node in direct part
+                count -= 1
+            head = curr
+        return head
 if __name__ == "__main__":
     k = 2
     head = ListNode(1)

@@ -26,3 +26,25 @@ class Solution:
             pre = cur
             cur = temp
         return pre
+
+
+class Solution_recursive(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        # 1 <- 2 <- reversedList  cur ——>5——>N
+        # using recursion
+
+        return self.helper(head, None)
+
+    def helper(self, cur, reversedList):
+        if cur == None:
+            return reversedList
+        else:
+            temp = cur
+            cur = cur.next
+            temp.next = reversedList
+            reversedList = temp
+            return self.helper(cur, reversedList)

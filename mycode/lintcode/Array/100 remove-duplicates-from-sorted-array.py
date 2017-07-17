@@ -76,16 +76,25 @@ class Solution(object):
                 i += 1
                 j += 1
         return j
-
-class Solution_leet(object):
+#i是找食物的，cur是吃货。cur不能吃跟昨天一样的东西，所以cur每过一天，就看如果昨天吃过了，就等在那，i往下遍历找吃的，找跟昨天不一样的吃的。
+# 找到了就喂给它，两人一起往下走一天。
+class Solution(object):
     def removeDuplicates(self, nums):
-        j = 0
-        for i in range(len(nums)):
-            if j ==0 or nums[j - 1] != nums[i]:
-                nums[j] = nums[i]
-                j += 1
-        return j
-
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # edge case
+        if nums is None or len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return 1
+        cur = 1
+        for i in range(1,len(nums)):
+            if nums[cur - 1] != nums[i]:
+                nums[cur] = nums[i]
+                cur += 1
+        return cur
 
 if __name__ == "__main__":
     a = [1,2,2,2,2,4,4]

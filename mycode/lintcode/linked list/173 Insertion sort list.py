@@ -41,22 +41,36 @@ class Solution1:
 
 
 # 答案
-class Solution:
-    """
-    @param head: The first node of linked list.
-    @return: The head of linked list.
-    """
+class Solution(object):
     def insertionSortList(self, head):
-        # write your code here
-        dummy = ListNode(-1)
-        # dummy.next = head
-        # cur = head
-        while head is not None:
-            cur = dummy
-            while cur.next is not None and cur.next.val < head.val:
-                cur = cur.next
-            temp = head.next
-            head.next = cur.next
-            cur.next = head
-            head = temp
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if head == None or head.next == None:
+            return head
+
+        dummy = ListNode(0)
+        dummy.next = head
+
+        pre = head
+        cur = head.next
+        while cur != None:
+            temp = cur.next
+            # already sorted
+            if cur.val >= pre.val:
+                pre = cur
+                cur = temp
+            else:
+                # find the insert position
+                cur2 = dummy
+                while cur2.next.val < cur.val:
+                    cur2 = cur2.next
+                temp2 = cur2.next
+                cur2.next = cur
+                cur.next = temp2
+                # adjust the pre pointer
+                pre.next = temp
+                cur = temp
         return dummy.next
+

@@ -22,34 +22,6 @@ class Solution:
     @param head: The first node of linked list.
     @return: a tree node
     """
-    # def __init__(self, cur):
-    #     self.cur = cur
-    # def get_list_len(self, head):
-    #     size = 0
-    #     while head is not None:
-    #         size += 1
-    #         head = head.next
-    # def sortedListToBST(self, head):
-    #     # write your code here
-    #     self.cur = head
-    #     size = self.get_list_len(head)
-    #     return self.sorted_list_helper(size)
-    # def get_list_len(self, head):
-    #     size = 0
-    #     while head is not None:
-    #         size += 1
-    #         head = head.next
-    #     return size
-    # def sorted_list_helper(self, size):
-    #     if size <= 0:
-    #         return None
-    #     left = self.sorted_list_helper(size/2)
-    #     root = TreeNode(self.cur.val)
-    #     self.cur = self.cur.next
-    #     right = self.sorted_list_helper(size - 1 - size/2)
-    #     root.left = left
-    #     root.right = right
-    #     return root
     def sortedListToBST(self, head):
         num = []
         curr = head
@@ -59,38 +31,73 @@ class Solution:
         return self.createBST(num, 0, len(num) - 1)
 
     def createBST(self, num, start, end):
-        if start > end: return None
+        if start > end: return None #到最后剩一个node时，mid = 0，start=0，end=mid-1=-1
         mid = (start + end) / 2
         root = TreeNode(num[mid])
         root.left = self.createBST(num, start, mid - 1)
         root.right = self.createBST(num, mid + 1, end)
         return root
-class Solution2:
-    # @param head, a list node
-    # @return a tree node
-    def bst(self, head, st, ed):
-        if st > ed or head[0] == None:
+#leet方法，每次找到中点，然后左半recurring，右半recurring
+class Solution_leet(object):
+    def sortedListToBST(self, head):
+        if not head:
             return None
-        mid = st + (ed - st)/2
-        left = self.bst(head, st, mid - 1)
-        root = TreeNode(head[0].val)
-        head[0] = head[0].next
-        right = self.bst(head, mid + 1, ed)
-        root.left = left
-        root.right = right
+
+        dummy = ListNode(0)
+        dummy.next = head
+
+        slow, fast = dummy, head
+        while fast and fast.next: #找中点
+            slow = slow.next
+            fast = fast.next.next
+
+        mid = slow.next #中点为slow的下一个
+        slow.next = None #分开一半
+        root = TreeNode(mid.val) #root为中点
+        if head != mid: #如果中点就是头儿，就不用再分左右了
+            root.left = self.sortedListToBST(head)
+            root.right = self.sortedListToBST(mid.next)
         return root
+# 九章Python法
+class Solution:
+    """
+    @param head: The first node of linked list.
+    @return: a tree node
+    """
 
     def sortedListToBST(self, head):
+        # write your code here
+        res = self.dfs(head)
+
+        return res
+
+    def dfs(self, head):
+
         if head == None:
             return None
-        tmp = head
-        n = 0
-        while tmp != None:
-            n += 1
-            tmp = tmp.next
-        return self.bst([head], 0, n)
 
+        if head.next == None:
+            return TreeNode(head.val)
 
+        dummy = ListNode(0)
+        dummy.next = head
+        fast = head
+        slow = dummy
+
+        while fast != None and fast.next != None:
+            fast = fast.next.next
+            slow = slow.next
+
+        temp = slow.next
+        slow.next = None
+        parent = TreeNode(temp.val)
+
+        parent.left = self.dfs(head)
+        parent.right = self.dfs(temp.next)
+
+        return parent
+
+#九章java解
 class Solution3():
     def __init__(self):
         self.cur = 0
@@ -117,6 +124,7 @@ class Solution3():
         # global cur
         self.cur = head
         return self.bst(self.cur, 0, n)
+
 
 if __name__ == "__main__":
     head = ListNode(1)

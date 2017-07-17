@@ -24,7 +24,7 @@ class Solution:
             return None
         ll = []
         for node in lists:
-            if node:
+            if node:  #保证某一个node是None时不加入ll，因为None没有val
                 ll.append((node.val, node))
         dummy = ListNode(-1)
         heapq.heapify(ll)
@@ -85,51 +85,43 @@ class Solution:
             lists = new_list
         return lists[0]
 
-#  我的练习
 import heapq
-class Solution1:
-    """
-    @param lists: a list of ListNode
-    @return: The head of one sorted list.
-    """
-# heap
+class Solution_self(object):
     def mergeKLists(self, lists):
-        # write your code here
-        result = []
-        if lists == [] or lists is None:
-            return None
-
-        result = []
-        for i in range(len(lists)):
-            if lists[i] is not None:
-                result.append((lists[i].val,lists[i]))
-        dummy = ListNode(0)
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        if lists is None or len(lists) == 0:
+            return []
+        dummy = ListNode(-1)
         cur = dummy
-        heapq.heapify(result)
-        while result != []:
+        array = []
+        for i in range(len(lists)):
+            if lists[i] is not None:  #别忘啦这里防止
+                array.append([lists[i].val,lists[i]])
 
-            value,link = heapq.heappop(result)
-            cur.next = ListNode(value)
+        heapq.heapify(array)
+        while array:
+            va,li = heapq.heappop(array)
+            cur.next = ListNode(va)
             cur = cur.next
-            link = link.next
-            if link is not None:
-                heapq.heappush(result,(link.val, link))
+            if li.next:
+                li = li.next
+                heapq.heappush(array,[li.val,li])
         return dummy.next
-
-
 if __name__ == '__main__':
 
-    P = ListNode(1)
-    P.next = ListNode(3)
-    P.next.next = ListNode(5)
-
-    O = ListNode(2)
-    O.next = ListNode(4)
-    O.next.next = ListNode(6)
-
-    Q = ListNode(7)
-    Q.next = ListNode(8)
-    Q.next.next = ListNode(9)
-    lists = [O, P, Q]
-    s = Solution1()
-    print s.mergeKLists(lists)
+    # P = None
+    #
+    # O = ListNode(2)
+    # O.next = ListNode(6)
+    # O.next.next = ListNode(8)
+    #
+    # Q = ListNode(3)
+    # Q.next = ListNode(4)
+    # Q.next.next = ListNode(9)
+    # lists = [O, P, Q]
+    lists = [None]
+    s = Solution()
+    print s.mergeKLists1(lists)

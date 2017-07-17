@@ -47,7 +47,6 @@ class Solution2(object):
         for i in range(le_row):
             for j in range(le_col):
                 index = i * le_col + j
-                # nums[i][j] = [index,nums[i][j]]
                 row = index // c
                 col = index % c
                 result[row][col] = nums[i][j]

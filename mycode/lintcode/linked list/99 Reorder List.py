@@ -119,6 +119,59 @@ class Solution1:
             cur = temp
         flag.next = None
         return pre
+
+
+class Solution3(object):
+    def reorderList(self, head):
+        """
+        :type head: ListNode
+        :rtype: void Do not return anything, modify head in-place instead.
+        """
+        if head is None or head.next is None or head.next.next is None:
+            return head
+        head1, head2 = self.find_mid(head)
+        head2 = self.reverse(head2)
+        dummy = ListNode(0)
+        cur = dummy
+        while head1 is not None and head2 is not None:
+            cur.next = head1
+            cur = cur.next
+            head1 = head1.next
+            cur.next = head2
+            cur = cur.next
+            head2 = head2.next
+        if head1 is not None:
+            cur.next = head1
+        # else:
+        #     cur.next = head2
+        return dummy.next
+
+    def find_mid(self, head):
+        dummy = ListNode(0)
+        dummy.next = head
+        slow = head
+        fast = head.next
+        while fast.next != None:
+            slow = slow.next
+            fast = fast.next
+            fast = fast.next
+
+        head2 = slow.next
+        slow.next = None
+        head1 = dummy.next
+        return head1, head2
+
+    def reverse(self, head):
+        # dummy = ListNode(0)
+        # dummy.next = head
+        pre = None
+        cur = head
+        while cur != None:
+            temp = cur.next
+            cur.next = pre
+            pre = cur
+            cur = temp
+        return pre
 if __name__ == "__main__":
     head = ListNode(0)
     head.next = ListNode(3)
@@ -126,11 +179,11 @@ if __name__ == "__main__":
     head.next.next.next = ListNode(-1)
     # head.next.next.next.next = ListNode(5)
     # head.next.next.next.next.next= ListNode(2)
-    s = Solution1()
+    s = Solution3()
     #test def merge
-    head1 = ListNode(3)
-    head2 = ListNode(3)
-    head2.next = ListNode(4)
+    # head1 = ListNode(3)
+    # head2 = ListNode(3)
+    # head2.next = ListNode(4)
 
     # d1,d2 = s.divide(head)
     # rev =s.reverse(head)

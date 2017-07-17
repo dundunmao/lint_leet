@@ -50,12 +50,61 @@ class Solution:
             power -= 1
             cur = cur.next
         return sum
+
+
+class Solution_leet(object):
+    def addTwoNumbers(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        if l1 is None and l2 is None:
+            return None
+        if l1 is None:
+            return l2
+        if l2 is None:
+            return l1
+
+        result = ListNode(-1)
+        l = result
+        v = 0
+        while l1 or l2:
+            if not l1:
+                l1_val = 0
+                l2_val = l2.val
+            elif not l2:
+                l2_val = 0
+                l1_val = l1.val
+            else:
+                l1_val = l1.val
+                l2_val = l2.val
+            v += l1_val + l2_val
+            if v < 10:
+                l.next = ListNode(v)
+                v = 0
+            else:
+                x = (v) % 10
+                l.next = ListNode(x)
+                v = 1
+            l = l.next
+            if l1:
+                l1 = l1.next
+            if l2:
+                l2 = l2.next
+        if v == 1:
+            l.next = ListNode(1)
+
+        return result.next
 if __name__ == '__main__':
 
-    P = ListNode(0)
-    P.next = ListNode(1)
+    P = ListNode(2)
+    P.next = ListNode(4)
     P.next.next = ListNode(5)
-    Q = ListNode(0)
-    s = Solution()
-    print s.converse(P)
-    print s.addLists(P,Q)
+    P.next.next.next = ListNode(5)
+    Q = ListNode(5)
+    Q.next = ListNode(6)
+    Q.next.next = ListNode(4)
+    s = Solution_leet()
+    # print s.converse(P)
+    print s.addTwoNumbers(P,Q)
