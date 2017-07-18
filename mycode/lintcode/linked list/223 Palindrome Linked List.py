@@ -90,7 +90,7 @@ class Solution1(object):
         while fast:
             fast = fast.next
             length = length + 1
-        # 取长度的一般，end遍历到中间点
+        # 取长度的一半，end遍历到中间点
         for i in range(length/2):
             end = end.next
         #从中间点开始，end遍历到底，并翻转箭头，prev是翻转后的头
