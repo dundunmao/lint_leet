@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+# 这道题就是让你判断，needle是不是haystack的子串，是的话就返回这个子串
 #time over
 class Solution(object):
     def strStr(self, haystack, needle):

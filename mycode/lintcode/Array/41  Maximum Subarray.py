@@ -14,7 +14,7 @@ class Solution:
     @return: An integer denote the sum of maximum subarray
     """
 
-
+# 方法1： subarray
     def maxSubArray(self, nums):
         # write your code here
         if nums is None or len(nums) == 0:
@@ -27,7 +27,7 @@ class Solution:
             max_subarray = max(max_subarray, prefix - min_prefix)#遍历到的pre_sum减去最小的pre_sum得到的就是这一轮的最大sum
             min_prefix = min(min_prefix, prefix)# 记录最小的pre_sum,要在算完max之后再更新,因为这里的min是上一次的(max_subarray= prefix[j]-prefix[i]), i 是j前面的.
         return max_subarray
-
+# 方法2：Kadane's algorithm
     def maxSubArray2(self,nums):
         local_max = 0
         global_max = float('-inf')

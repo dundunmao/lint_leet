@@ -69,7 +69,13 @@ class Solution2(object):
             headA, headB = headA.next, headB.next
         return None
 
-#方法三：两个list同时往后走，走到头再从头走，两人总有一天会相遇。如果俩人不相交，会同时到None
+#方法三：两个list同时往后走，走到头再从另一个的从头走，两人会在交点相遇。如果俩人不相交，会同时到None
+# A:          a1 → a2 → c1 → c2 → c3
+# B:     b1 → b2 → b3 → c1 → c2 → c3
+# 这个方法相当于把两个变成AB和BA
+# A:     a1 → a2 → c1 → c2 → c3 → b1 → b2 → b3 → c1 → c2 → c3
+# B:     b1 → b2 → b3 → c1 → c2 → c3 → a1 → a2 → c1 → c2 → c3
+# 这样会在C1点相遇
 class Solution3:
     # @param two ListNodes
     # @return the intersected ListNode
@@ -93,25 +99,6 @@ class Solution3:
                 pb = pb.next
 
         return pa
-#遍历A，存hash key是地址，value是node。再遍历B，看有没有在同一个地址的！
-class Solution4:
-    # @param headA: the first list
-    # @param headB: the second list
-    # @return: a ListNode
-    def getIntersectionNode(self, headA, headB):
-        # Write your code here
-        if headA is None or headB is None:
-            return None
-        hash = {}
-        while headA != None:
-            hash[id(headA)] = headA
-            headA = headA.next
-        while headB != None:
-            if hash.has_key(id(headB)):
-                return headB
-            else:
-                headB = headB.next
-        return None
 
 if __name__ == "__main__":
 
