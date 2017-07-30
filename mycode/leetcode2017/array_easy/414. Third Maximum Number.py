@@ -52,7 +52,7 @@ class Solution_leet(object):
         if float('-inf') in a:
             return a[0]
         else:
-            a[-1]
+            return a[-1]
 
 
 if __name__ == "__main__":

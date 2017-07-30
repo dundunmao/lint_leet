@@ -1,4 +1,4 @@
-# coding:utf-8
+1# coding:utf-8
 # 正如标题所述，你需要使用两个栈来实现队列的一些操作。
 #
 # 队列应支持push(element)，pop() 和 top()，其中pop是弹出队列中的第一个(最前面的)元素。

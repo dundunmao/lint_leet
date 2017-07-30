@@ -31,7 +31,6 @@ class Solution:
                 if dic[s[j]] == 0: #value为0了，count才减，所以count为0时，说明这一段就是anagrams
                     count -= 1
             j += 1
-
             while count == 0:
                 if j - i == len(p): #Windows
                     result.append(i)
@@ -41,8 +40,9 @@ class Solution:
                         count += 1
                 i += 1
         return result
+
 if __name__ == '__main__':
-    a = "abab"
-    b = "ab"
+    a = "cbaebabacd"
+    b = "abc"
     s = Solution()
     print s.findAnagrams(a,b)

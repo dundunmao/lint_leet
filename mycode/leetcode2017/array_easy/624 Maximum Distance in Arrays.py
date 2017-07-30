@@ -21,3 +21,30 @@ class Solution(object):
             maxi = max(maxi,nums[i][le - 1])
 
         return ans
+class Solution(object):
+    def findPairs(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        # edge case
+        if len(nums) == 0 or k < 0:
+            return 0
+        # normal
+        hash = {}
+        result = 0
+        for num in nums:
+            if hash.has_key(num):
+                hash[num] += 1
+            else:
+                hash[num] = 1
+        for key,value in hash.items():
+            if k == 0:
+                if value > 1:
+                    result += 1
+            else:
+                if hash.has_key(key+k):
+                    result += 1
+
+        return result

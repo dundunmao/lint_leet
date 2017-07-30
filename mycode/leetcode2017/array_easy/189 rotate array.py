@@ -10,9 +10,10 @@ class Solution(object):
             return
         le = len(nums)
         i = 0
-        while i < le:
+        while i < k:
             nums.insert(0,nums[-1])
             nums.pop()
+            # nums = nums[:-1]
             i += 1
     def rotate_daan(self, nums, k):
         """

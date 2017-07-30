@@ -1,33 +1,23 @@
 # -*- encoding: utf-8 -*-
+
+
 class Solution(object):
-    def findPairs(self, nums, k):
+    def findMaxConsecutiveOnes(self, nums):
         """
         :type nums: List[int]
-        :type k: int
         :rtype: int
         """
-        # edge case
-        if len(nums) == 0:
-            return 0
-        # normal
-        hash = {}
-        result = 0
-        for i in range(len(nums)):
-            if k == 0:
-                if hash.has_key(nums[i]) and hash[nums[i]] == 1:
-                    result += 1
-                else:
-                    hash[nums[i]] = 1
-            else:
-                if not hash.has_key(nums[i]):
-                    hash[nums[i]] = 1
-                    if hash.has_key(nums[i] + k):
-                        result += hash[nums[i] + k]
-                    elif hash.has_key(nums[i] - k):
-                        result += hash[nums[i] - k]
-                    if not hash.has_key(nums[i]):
-                        hash[nums[i]] = 1
-        return result
+        i = 0
+        ans = 0
+        count = 0
+        while i<len(nums):
+            if nums[i] == 1:
+                count +=1
+                ans = max(ans,count)
+            if nums[i] == 0:
+                count = 0
+            i+= 1
+        return ans
 if __name__ == "__main__":
     a = [3,1,4,1,5]
     k = 2
