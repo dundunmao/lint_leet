@@ -190,14 +190,74 @@ class LRUCache3:
                 t = datetime.now()
                 self.dict[key] = [value,t]
 
+
+class Node:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
+
+
+class LRUCache_leet(object):
+    def __init__(self, capacity):
+        """
+        :type capacity: int
+        """
+        self.capacity = capacity
+        self.d = {}
+        self.head = Node(0, 0)
+        self.tail = Node(0, 0)
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+    def add(self, node):
+        head_next = self.head.next
+        self.head.next = node
+        node.prev = self.head
+        head_next.prev = node
+        node.next = head_next
+
+    def remove(self, node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
+
+    def get(self, key):
+        """
+        :type key: int
+        :rtype: int
+        """
+        if key not in self.d:
+            return -1
+        node = self.d[key]
+        self.remove(node)
+        self.add(node)
+        return node.value
+
+    def put(self, key, value):
+        """
+        :type key: int
+        :type value: int
+        :rtype: void
+        """
+        if key in self.d:
+            self.remove(self.d[key])
+        node = Node(key, value)
+        self.add(node)
+        self.d[key] = node
+        if len(self.d) > self.capacity:
+            tail_prev = self.tail.prev
+            self.remove(tail_prev)
+            del self.d[tail_prev.key]
+
+
 if __name__ == '__main__':
 
-    s = LRUCache3(2)
-    s.set(2,1)
-    s.set(1,1)
+    s = LRUCache_leet(2)
+    s.put(2,1)
+    s.put(1,1)
     s.get(2)
-    s.set(4,1)
+    s.put(4,1)
     s.get(1)
     s.get(2)
-    print s.dict
     # print s.hash

@@ -40,7 +40,7 @@ class Solution:
                 stack.append(node.left)
         return result
 
-    # traverse
+# traverse
 class Solution1:
     def preorderTraversal(self, root):
         result = []

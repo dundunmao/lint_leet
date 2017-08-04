@@ -49,7 +49,48 @@ class Solution:
                 maxi = max(maxi,h*w)
             stack.append(i)
         return maxi
+#f方法二，robin的方法
+class Solution_leet(object):
+    def maximalRectangle(self, matrix):
+        """
+        :type matrix: List[List[str]]
+        :rtype: int
+        """
+        if matrix is None or len(matrix) == 0:
+            return 0
+        matrix = [[int(matrix[i][j]) for j in range(len(matrix[0]))] for i in range(len(matrix))]
 
+        row = len(matrix)
+        ans = 0
+        for i in range(row - 1, -1, -1):
+            col = []
+            for k in range(0, len(matrix[0])):
+                ele = 0
+                for j in range(i, -1, -1):
+                    if matrix[j][k] == 1:
+                        ele += 1
+                    else:
+                        break
+                col.append(ele)
+            ans = max(ans, self.histogram(col))
+        return ans
+
+    def histogram(self, A):
+        # return maximum rectanglu
+        l = [0 for i in range(len(A))]
+        r = [0 for j in range(len(A))]
+        res = 0
+        for i in range(len(A)):
+            l[i] = i
+            while l[i] > 0 and A[i] <= A[l[i] - 1]:
+                l[i] = l[l[i] - 1]
+        for i in range(len(A) - 1, -1, -1):
+            r[i] = i
+            while r[i] < len(A) - 1 and A[i] <= A[r[i] + 1]:
+                r[i] = r[r[i] + 1]
+        for i in range(len(A)):
+            res = max(res, A[i] * (r[i] - l[i] + 1))
+        return res
 if __name__ == "__main__":
 
     m = [
@@ -59,6 +100,6 @@ if __name__ == "__main__":
         [0, 0, 1, 1, 1],
         [0, 0, 0, 0, 1]
     ]
-
-    s = Solution()
+    # m = [[1,0,1,0,0], [1,0,1,1,1], [1,1,1,1,1], [1,0,0,1,0]]
+    s = Solution1()
     print s.maximalRectangle(m)

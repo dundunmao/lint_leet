@@ -45,7 +45,7 @@ class Solution:
             stack.append(wait)
         return stack[-1].left
 
-    #用heap exceed time limite
+#用heap exceed time limite
 import heapq
 class Solution1:
     # @param A: Given an integer array with no duplicates.

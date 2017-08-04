@@ -11,37 +11,56 @@ class Solution(object):
         f = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
         s = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']
         t = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+        tran = []  #有一个空指针，每次都指那三行中的一行。下面这个comment的方法是每个都查
+        # for w in words:
+        #     w_low = w.lower()
+        #     l = w_low[0]
+        #     flag = True
+        #     if l in f:
+        #         for i in range(1, len(w)):
+        #             if w[i] not in f:
+        #                 flag = False
+        #                 break
+        #         if flag == False:
+        #             continue
+        #         ans.append(w)
+        #
+        #     elif l in s:
+        #         for i in range(1, len(w)):
+        #             if w[i] not in s:
+        #                 flag = False
+        #                 break
+        #         if flag == False:
+        #             continue
+        #         ans.append(w)
+        #     elif l in t:
+        #         for i in range(1, len(w)):
+        #             if w[i] not in t:
+        #                 flag = False
+        #                 break
+        #         if flag == False:
+        #             continue
+        #         ans.append(w)
+        # return ans
         for w in words:
             w_low = w.lower()
             l = w_low[0]
             flag = True
             if l in f:
-                for i in range(1, len(w)):
-                    if w[i] not in f:
-                        flag = False
-                        break
-                if flag == False:
-                    continue
-                ans.append(w)
-
+                tran = f
             elif l in s:
-                for i in range(1, len(w)):
-                    if w[i] not in s:
-                        flag = False
-                        break
-                if flag == False:
-                    continue
-                ans.append(w)
+                tran = s
             elif l in t:
-                for i in range(1, len(w)):
-                    if w[i] not in t:
-                        flag = False
-                        break
-                if flag == False:
-                    continue
+                tran = t
+            for i in range(1, len(w)):
+                if w[i] not in tran:
+                    flag = False
+                    break
+            if flag == False:
+                continue
+            else:
                 ans.append(w)
         return ans
-
 class Solution_leet(object):
     def findWords(self, words):
         """
@@ -61,6 +80,23 @@ class Solution_leet(object):
             if t & c == t:
                 ans.append(word)
         return ans
+
+    def findWords1(self, words):
+        ans = []
+        hash = {}
+        f = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
+        s = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']
+        t = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+        for ele in f:
+            hash[ele] = 1
+        for ele in f:
+            hash[ele] = 2
+        for ele in f:
+            hash[ele] = 3
+        for word in words:
+            for char in word:
+                num = hash[char]
+
 if __name__ == "__main__":
     nums = ["Hello","Alaska","Dad","Peace"]
     x = Solution()

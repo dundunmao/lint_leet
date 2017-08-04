@@ -16,3 +16,24 @@ class Solution(object):
                 return str
             else:
                 hash[str] -= 1
+class Solution1(object):
+    def findTheDifference_bit(self, s, t):
+        ans = 0
+        for c in s + t:
+            ans ^= ord(c)
+            print ans
+        return chr(ans)
+class Solution2(object):
+    def findTheDifference_bit(self, s, t):
+        ans = ord(s[-1])
+        for i in range(len(s)):
+            ans -= ord(s[i])
+            ans += ord(t[i])
+        return ans
+
+
+if __name__ == "__main__":
+    a = "abc"  #output=24
+    b = 'abcd'
+    x = Solution2()
+    print x.findTheDifference_bit(a,b)

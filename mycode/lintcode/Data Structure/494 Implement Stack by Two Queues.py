@@ -14,7 +14,7 @@ from Queue import Queue
 class Stack:
     # initialize your data structure here.
     def __init__(self):
-        self.q1 = Queue()
+        self.q1 = Queue()   #注意
         self.q2 = Queue()
 
     # @param x, an integer, push a new item into the stack
@@ -28,9 +28,9 @@ class Stack:
         # Write your code here
         for i in range(self.q1.qsize()-1):
             self.q2.put(self.q1.get())
-        self.q1.get()
+        ans = self.q1.get()
         self.q1 = self.q2
-
+        return ans
     # @return an integer, return the top of the stack
     def top(self):
         # Write your code here

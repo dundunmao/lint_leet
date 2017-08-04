@@ -5,6 +5,7 @@
 # 样例
 # 给出 [3,10,1000,-99,4,100], k = 3.
 # 返回 [1000, 100, 10]
+# http://www.jiuzhang.com/solutions/top-k-largest-numbers/
 # 这个用内在函数不是考点
 class Solution:
     '''
@@ -19,7 +20,21 @@ class Solution:
         result = nums[-k:]
         result.reverse()
         return result
+import heapq
 
+class Solution:
+    '''
+    @param {int[]} nums an integer array
+    @param {int} k an integer
+    @return {int[]} the top k largest numbers in array
+    '''
+    def topk(self, nums, k):
+        # Write your code here
+        heapq.heapify(nums)
+        topk = heapq.nlargest(k, nums)
+        topk.sort()
+        topk.reverse()
+        return topk
 
 
 

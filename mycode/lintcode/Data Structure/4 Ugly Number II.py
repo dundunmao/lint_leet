@@ -36,8 +36,40 @@ class Solution:
         return number
 
 
+# because every number can only be divided by 2, 3, 5, one way to look at the sequence is to split the sequence to three groups as below:
+# The ugly-number sequence is 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15
+# (1) 1×2, 2×2, 3×2, 4×2, 5×2, …
+# (2) 1×3, 2×3, 3×3, 4×3, 5×3, …
+# (3) 1×5, 2×5, 3×5, 4×5, 5×5, …
+# 我们就从这里每次都找最小的
+# every step，we choose the smallest one, and move one step after,including nums with same value.
+class Solution_leet(object):
+    def nthUglyNumber(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        q = [1]
+        index2 = index3 = index5 = 1
+        factor2 = 2
+        factor3 = 3
+        factor5 = 5
+        for i in range(1,n):
+            mini = min(factor2,factor3,factor5)
+            q.append(mini)
+            if factor2 == mini:
+                factor2 = 2*q[index2]
+                index2 += 1
+            elif factor3 == mini:
+                factor3 = 3*q[index3]
+                index3 += 1
+            elif factor5 == mini:
+                factor5 = 5*q[index5]
+                index5 += 1
+        print q
+        return q[-1]
 
 if __name__ == '__main__':
-    n = 9
-    s = Solution()
+    n = 10
+    s = Solution_leet()
     print s.nthUglyNumber(n)

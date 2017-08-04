@@ -63,7 +63,7 @@ class Solution2:
         result = []
         queue = Queue()
         queue.put(root)
-        while queue.qsize()>0:
+        while queue.qsize()>0:#这里不能写成 while queue：
             l = queue.qsize()
             list_level = []
             for i in range(l):

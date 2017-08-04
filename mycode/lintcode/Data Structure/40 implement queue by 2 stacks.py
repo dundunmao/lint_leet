@@ -31,6 +31,67 @@ class MyQueue:
         for i in range(len(self.stack2)):
             self.stack1.append(self.stack2.pop())
         return p
+
+
+class MyQueue(object):
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.array = []
+
+    def push(self, x):
+        """
+        Push element x to the back of queue.
+        :type x: int
+        :rtype: void
+        """
+        self.array.append(x)
+
+    def pop(self):
+        """
+        Removes the element from in front of queue and returns that element.
+        :rtype: int
+        """
+        if len(self.array) == 0:
+            return None
+        x = []
+        for i in range(len(self.array)):
+            x.append(self.array.pop())
+        ans = x.pop()
+        while x:  # 注意这里是x的长度
+            self.array.append(x.pop())
+        return ans
+
+    def peek(self):
+        """
+        Get the front element.
+        :rtype: int
+        """
+        if len(self.array) == 0:
+            return None
+        x = []
+        while self.array:
+            x.append(self.array.pop())
+        ans = x[-1]
+        while x:  # 注意这里是x的长度
+            self.array.append(x.pop())
+        return ans
+
+    def empty(self):
+        """
+        Returns whether the queue is empty.
+        :rtype: bool
+        """
+        return len(self.array) == 0
+
+
+# Your MyQueue object will be instantiated and called as such:
+# obj = MyQueue()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.peek()
+# param_4 = obj.empty()
 if __name__ == '__main__':
 
     s = MyQueue()

@@ -2,8 +2,7 @@
 # 实现一个数据结构，提供下面两个接口
 # 1.add(number) 添加一个元素
 # 2.topk() 返回前K大的数
-#
-# 您在真实的面试中是否遇到过这个题？ Yes
+# http://www.jiuzhang.com/solutions/top-k-largest-number-ii
 # 样例
 # s = new Solution(3);
 # >> create a new data structure.
@@ -21,6 +20,7 @@
 # s.add(100)
 # s.topk()
 # >> return [1000, 100, 10]
+# 这题要一直保持数组的各数小于等于K。
 from heapq import *
 
 

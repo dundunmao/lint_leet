@@ -58,28 +58,28 @@ class Solution:
         return ans
 #for 3次，一次找左边界，一次找右边界，一次算area
 class Solution_for_three(object):
-    def largestRectangleArea(self, height):
+    def largestRectangleArea(self, A):
         """
         :type heights: List[int]
         :rtype: int
         """
-        if height is None or height == []:
+        if A is None or A == []:
             return 0
-        res = 0
-        le = len(height)
+        ans = 0
+        le = len(A)
         left = [0 for i in range(le)]
         right = [0 for i in range(le)]
         for i in range(0, le):
             left[i] = i
-            while left[i] > 0 and height[i] <= height[left[i] - 1]:
+            while left[i] > 0 and A[i] <= A[left[i] - 1]:
                 left[i] = left[left[i] - 1]
         for i in range(le - 1, -1, -1):
             right[i] = i
-            while right[i] < le - 1 and height[i] <= height[right[i] + 1]:
+            while right[i] < le - 1 and A[i] <= A[right[i] + 1]:
                 right[i] = right[right[i] + 1]
         for i in range(le):
-            res = max(res, height[i] * (right[i] - left[i] + 1))
-        return res
+            ans = max(ans, A[i] * (right[i] - left[i] + 1))
+        return ans
  # brute force,枚举(enumeration) for矩阵的起点  O(n^2)
 class Solution1:
 
