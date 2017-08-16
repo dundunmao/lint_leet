@@ -33,10 +33,30 @@ class Solution_leet(object):
                         break
                     array[i * j] = True
         return count
+
+class Solution(object):
+    def countPrimes1(self, n):
+        if n<2:
+            return 0
+        array = [False for i in range(n)]
+        i = 2
+        while i < n:
+            if array[i] == False:
+                j = 2
+                while i * j < n:
+                    array[i*j] = True
+                    j += 1
+            i += 1
+        count = 0
+        for ele in array:
+            if ele == False:
+                count+=1
+        return count - 2
+
+
 #
-#     }
 if __name__ == "__main__":
     a = 499979
-    a = 100
+    a = 10
     x = Solution()
-    print x.countPrimes(a)
+    print x.countPrimes1(a)

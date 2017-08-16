@@ -1,5 +1,5 @@
 # coding:utf-8
-# 根据前序遍历和中序遍历树构造二叉树.
+# 根据preoreder和inorder构造二叉树.
 #
 #  注意事项
 #
@@ -12,6 +12,9 @@
 #   2
 #  / \
 # 1   3
+
+# preorder  根左右
+# inorder   左根右
 
 class TreeNode:
     def __init__(self, val):

@@ -81,52 +81,6 @@ class Solution2:
 
 
 
-# 我的练习,time exceed
-class Solution5:
-    """
-    @param root: The root of binary tree.
-    @return: An integer
-    """
-    def maxPathSum(self, root):
-        # write your code here
-        if root is None:
-            return 0
-        maxi = float('-inf')
-        # 左
-        if root.left:
-            left = self.maxPathSum(root.left)
-            maxi = max(maxi, left)
-        # 右
-        if root.right:
-            right = self.maxPathSum(root.right)
-            maxi = max(maxi, right)
-        # 通过root的.
-        left_root = self.maxPathSum2(root.left)
-        right_root = self.maxPathSum2(root.right)
-        through_root = max((left_root+right_root+root.val),(left_root+root.val), (right_root+root.val),root.val)
-
-        return max(maxi, through_root)
-    # 题475
-    def maxPathSum2(self, root):
-        #edge case
-        if root is None:
-            return 0
-        if root.left is None and root.right is None:
-            return root.val
-        #normal case
-        max_left = float('-inf')
-        max_right = float('-inf')
-        if root.left:
-            max_left = self.maxPathSum2(root.left)
-        if root.right:
-            max_right = self.maxPathSum2(root.right)
-        return max(max_left+root.val,max_right+root.val,root.val)
-
-
-
-
-
-
 
 if __name__ == '__main__':
     #        TREE 1
@@ -137,8 +91,9 @@ if __name__ == '__main__':
     #    /   \
     #  2      4
 
-    P = TreeNode(-1)
-    s = Solution()
+    P = TreeNode(1)
+    P.left = TreeNode(2)
+    s = Solution7()
     print s.maxPathSum(P)
 
 

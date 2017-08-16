@@ -50,8 +50,7 @@ class Solution:
         return max(left,right) + 1
 
 
-
-class Solution3:
+class Solution1:
     """
     @param root: The root of binary tree.
     @return: An integer
@@ -101,5 +100,5 @@ if __name__ == '__main__':
     # Q.right = Node(3)
     # # Q.right.right = Node(3)
 
-    s = Solution3()
+    s = Solution1()
     print s.maxDepth(P)

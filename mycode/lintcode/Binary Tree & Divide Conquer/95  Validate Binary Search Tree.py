@@ -50,7 +50,7 @@ class Solution:
             return False, 0, 0
 
         return True, max(root.val, max_val_right), min(root.val, min_val_left)
-
+# 上法的简化
 class Solution1:
     def isValidBST(self, root):
         validate, maxi, mini = self.helper(root)
@@ -59,13 +59,33 @@ class Solution1:
     def helper(self, root):
         if root is None:
             return True, float('-inf'), float('inf')
+
         left = self.helper(root.left)
         if not left[0] or left[1] >= root.val:
             return False, 0, 0
+
         right = self.helper(root.right)
         if not right[0] or right[2] <= root.val:
             return False, 0, 0
         return True, max(root.val, right[1]), min(root.val, left[2])
+# leet
+class Solution_leet(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        minVal = float('-inf')
+        maxVal = float('inf')
+        return self.helper(root, minVal, maxVal)
+
+    def helper(self, root, minVal, maxVal): #minVal和maxVal是root的最小最大boundary
+        if root is None:
+            return True
+        if root.val >= maxVal or root.val <= minVal:
+            return False
+        return self.helper(root.left, minVal, root.val) and self.helper(root.right, root.val, maxVal)
+
 
 if __name__ == '__main__':
     #        TREE 1

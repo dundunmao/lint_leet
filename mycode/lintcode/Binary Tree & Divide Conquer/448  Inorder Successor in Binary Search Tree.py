@@ -1,11 +1,7 @@
 # -*- encoding: utf-8 -*-
 # 给一个二叉查找树(什么是二叉查找树)，以及一个节点，求该节点的中序遍历后继，如果没有返回null
-#
 #  注意事项
-#
-# It's guaranteed p is one node in the given tree. (You can directly compare the memory address to find p)
-#
-# 您在真实的面试中是否遇到过这个题？ Yes
+# It's guaranteed p is one node in the given tree.
 # 样例
 # 给出 tree = [2,1] node = 1:
 #
@@ -35,7 +31,7 @@ class Solution(object):
     def inorderSuccessor(self, root, p):
         # write your code here
         result = None
-        while root is not None and root.val != p.val:
+        while root != None and root.val != p.val:
             if root.val > p.val:
                 result = root   #只有往左子树走的时候,才把这个root记录着(因为当某个点无右子树时,他的下一个点是他的上一层,就是这个root),把左子树都走完了前一直是这个root
                 root = root.left

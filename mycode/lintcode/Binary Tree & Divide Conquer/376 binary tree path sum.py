@@ -41,12 +41,13 @@ class Solution:
         return result
 
     def helper(self,root,target,path,result):
-        if root is None:
-            return
+        # if root is None:
+        #     return
         if root.left is None and root.right is None:
             if target == 0:
-                array = [i for i in path]
-                result.append(array)
+                # array = [i for i in path]
+                # result.append(array)
+                result.append(path[:])  #path[:]是创建了一个硬拷贝，跟上面一个效果
             return
         #尝试往左走,尝试完要还原
         if root.left:
@@ -59,7 +60,31 @@ class Solution:
             self.helper(root.right, target-root.right.val,path,result)
             path.pop()
 
+class Solution1:
+    # @param {TreeNode} root the root of binary tree
+    # @param {int} target an integer
+    # @return {int[][]} all valid paths
+    def binaryTreePathSum(self, root, target):
+        # Write your code here
+        result = []
+        path = []
+        self.dfs(root, path, result, 0,  target)
 
+        return result
+
+    def dfs(self, root, path, result, len, target):
+        if root is None:
+            return
+        path.append(root.val)
+        len += root.val
+
+        if root.left is None and root.right is None and len == target:
+            result.append(path[:])
+
+        self.dfs(root.left, path, result, len, target)
+        self.dfs(root.right, path, result, len, target)
+
+        path.pop()
 if __name__ == '__main__':
     #        TREE 1
     # Construct the following tree
@@ -71,11 +96,11 @@ if __name__ == '__main__':
 
     P = TreeNode(1)
     P.left = TreeNode(2)
-    P.left.left = TreeNode(2)
-    P.left.right = TreeNode(3)
-    P.right = TreeNode(4)
+    P.left.left = TreeNode(3)
+    P.left.right = TreeNode(4)
+    P.right = TreeNode(5)
     Q = P.left.right
-    t = 5
+    t = 6
     # Q = Node(26)
     # Q.left = Node(10)
     # Q.left.left = Node(4)

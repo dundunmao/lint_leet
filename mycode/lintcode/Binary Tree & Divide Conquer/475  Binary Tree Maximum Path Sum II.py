@@ -25,13 +25,9 @@ class Solution:
     @return an integer
     """
     def maxPathSum2(self, root):
-        # Write your code here
+        # write your code here
         if root is None:
             return 0
-        left = self.maxPathSum2(root.left)
-        right = self.maxPathSum2(root.right)
-        # if no negative, root to leaf
-        # return max(left, right) + root.val
-
-        # if has negative, root to anynode
-        return max(0, max(left,right)) + root.val
+        l = self.maxPathSum2(root.left)
+        r = self.maxPathSum2(root.right)
+        return max(0,l,r)+root.val

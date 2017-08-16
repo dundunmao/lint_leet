@@ -12,7 +12,7 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 给出[4,4,5,6,7,0,1,2]  返回 0
-#
+# 思路是把前面重复的点去掉。直到去掉与最后一点不同（nums[start] == nums[end]），但是不能全去掉，要保留end点:start < end
 
 class Solution:
     # @param num: a rotated sorted array

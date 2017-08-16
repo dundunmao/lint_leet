@@ -12,6 +12,7 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 给出[3,4,4,5,7,0,1,2]和target=4，返回 true
+# 思路，就是把前后重复的点都去掉，去之前check是不是target。这样就不怕都去掉了
 class Solution:
     """
     @param A : an integer ratated sorted array and duplicates are allowed

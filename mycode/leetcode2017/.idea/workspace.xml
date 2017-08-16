@@ -16,6 +16,8 @@
     <SUITE FILE_PATH="coverage/leetcode2017$38_Count_and_Say.coverage" NAME="38 Count and Say Coverage Results" MODIFIED="1501101529030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$566__Reshape_the_Matrix.coverage" NAME="566. Reshape the Matrix Coverage Results" MODIFIED="1499225156682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$628__Maximum_Product_of_Three_Numbers.coverage" NAME="628. Maximum Product of Three Numbers Coverage Results" MODIFIED="1501282825099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
+    <SUITE FILE_PATH="coverage/leetcode2017$623__Add_One_Row_to_Tree.coverage" NAME="623. Add One Row to Tree Coverage Results" MODIFIED="1502173754572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_mid" />
+    <SUITE FILE_PATH="coverage/leetcode2017$632__Smallest_Range.coverage" NAME="632. Smallest Range Coverage Results" MODIFIED="1502091481337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_hard" />
     <SUITE FILE_PATH="coverage/leetcode2017$461__Hamming_Distance.coverage" NAME="461. Hamming Distance Coverage Results" MODIFIED="1501634247022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit" />
     <SUITE FILE_PATH="coverage/leetcode$581__Shortest_Unsorted_Continuous_Subarray.coverage" NAME="581. Shortest Unsorted Continuous Subarray Coverage Results" MODIFIED="1499228639716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode$88__Merge_Sorted_Array.coverage" NAME="88. Merge Sorted Array Coverage Results" MODIFIED="1498622917937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -28,6 +30,8 @@
     <SUITE FILE_PATH="coverage/leetcode2017$606__Construct_String_from_Binary_Tree.coverage" NAME="606. Construct String from Binary Tree Coverage Results" MODIFIED="1501098320180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$624_Maximum_Distance_in_Arrays.coverage" NAME="624 Maximum Distance in Arrays Coverage Results" MODIFIED="1499232507282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$290__Word_Pattern.coverage" NAME="290. Word Pattern Coverage Results" MODIFIED="1499650132380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
+    <SUITE FILE_PATH="coverage/leetcode2017$611__Valid_Triangle_Number.coverage" NAME="611. Valid Triangle Number Coverage Results" MODIFIED="1502661000567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_hard" />
+    <SUITE FILE_PATH="coverage/leetcode2017$652__Find_Duplicate_Subtrees.coverage" NAME="652. Find Duplicate Subtrees Coverage Results" MODIFIED="1502671567274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_mid" />
     <SUITE FILE_PATH="coverage/leetcode2017$383__Ransom_Note.coverage" NAME="383. Ransom Note Coverage Results" MODIFIED="1500405005987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$541__Reverse_String_II.coverage" NAME="541. Reverse String II Coverage Results" MODIFIED="1500403579466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$434__Number_of_Segments_in_a_String.coverage" NAME="434. Number of Segments in a String Coverage Results" MODIFIED="1501040544971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
@@ -39,7 +43,7 @@
     <SUITE FILE_PATH="coverage/leetcode$118__Pascal_s_Triangle.coverage" NAME="118. Pascal's Triangle Coverage Results" MODIFIED="1499061695387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2017$14__Longest_Common_Prefix.coverage" NAME="14. Longest Common Prefix Coverage Results" MODIFIED="1501032964189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$532__K_diff_Pairs_in_an_Array.coverage" NAME="532. K-diff Pairs in an Array Coverage Results" MODIFIED="1499234190930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
-    <SUITE FILE_PATH="coverage/leetcode2017$204__Count_Primes.coverage" NAME="204. Count Primes Coverage Results" MODIFIED="1499641023954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
+    <SUITE FILE_PATH="coverage/leetcode2017$204__Count_Primes.coverage" NAME="204. Count Primes Coverage Results" MODIFIED="1502230854831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$448__Find_All_Numbers_Disappeared_in_an_Array.coverage" NAME="448. Find All Numbers Disappeared in an Array Coverage Results" MODIFIED="1500950391035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$67__Add_Binary.coverage" NAME="67. Add Binary Coverage Results" MODIFIED="1501106226548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$463__Island_Perimeter.coverage" NAME="463. Island Perimeter Coverage Results" MODIFIED="1499734269597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
@@ -64,41 +68,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="628. Maximum Product of Three Numbers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/array_easy/628. Maximum Product of Three Numbers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="40" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="389. Find the Difference.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hash_easy/389. Find the Difference.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="500. Keyboard Row.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_easy/500. Keyboard Row.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="1485">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="102" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="594. Longest Harmonious Subsequence.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="594. Longest Harmonious Subsequence.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_easy/594. Longest Harmonious Subsequence.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="632. Smallest Range.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/array_hard/632. Smallest Range.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="611. Valid Triangle Number.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/array_hard/611. Valid Triangle Number.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="652. Find Duplicate Subtrees.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree_mid/652. Find Duplicate Subtrees.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="623. Add One Row to Tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree_mid/623. Add One Row to Tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="235. Lowest Common Ancestor of a Binary Search Tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree_easy/235. Lowest Common Ancestor of a Binary Search Tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -108,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/bit/461. Hamming Distance.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -117,8 +151,8 @@
       <file leaf-file-name="447 numbers of Boomerangs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_easy/447 numbers of Boomerangs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -146,12 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hash_easy/205. Isomorphic Strings.py" />
-        <option value="$PROJECT_DIR$/hash_easy/242. Valid Anagram.py" />
-        <option value="$PROJECT_DIR$/hash_easy/266 Palindrome Permutation .py" />
-        <option value="$PROJECT_DIR$/hash_easy/246 Strobogrammatic Number .py" />
-        <option value="$PROJECT_DIR$/hash_easy/290. Word Pattern.py" />
-        <option value="$PROJECT_DIR$/hash_easy/359 Logger Rate Limiter.py" />
         <option value="$PROJECT_DIR$/sliding window/438. Find All Anagrams in a String.py" />
         <option value="$PROJECT_DIR$/sliding window/76. Minimum Window Substring.py" />
         <option value="$PROJECT_DIR$/sliding window/3. Longest Substring Without Repeating Characters.py" />
@@ -197,6 +225,12 @@
         <option value="$PROJECT_DIR$/bit.py" />
         <option value="$PROJECT_DIR$/bit/461. Hamming Distance.py" />
         <option value="$PROJECT_DIR$/hash_easy/594. Longest Harmonious Subsequence.py" />
+        <option value="$PROJECT_DIR$/array_hard/632. Smallest Range.py" />
+        <option value="$PROJECT_DIR$/hash_easy/204. Count Primes.py" />
+        <option value="$PROJECT_DIR$/array_hard/611. Valid Triangle Number.py" />
+        <option value="$PROJECT_DIR$/tree_mid/652. Find Duplicate Subtrees.py" />
+        <option value="$PROJECT_DIR$/tree_easy/235. Lowest Common Ancestor of a Binary Search Tree.py" />
+        <option value="$PROJECT_DIR$/tree_mid/623. Add One Row to Tree.py" />
       </list>
     </option>
   </component>
@@ -207,9 +241,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="544" />
-    <option name="y" value="23" />
-    <option name="width" value="1080" />
+    <option name="x" value="402" />
+    <option name="y" value="30" />
+    <option name="width" value="1189" />
     <option name="height" value="709" />
   </component>
   <component name="ProjectView">
@@ -227,8 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,7 +283,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hash_easy" />
+              <option name="myItemId" value="tree_mid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,7 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bit" />
+              <option name="myItemId" value="tree_easy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,12 +311,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="array_easy" />
+              <option name="myItemId" value="array_hard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,46 +345,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.461. Hamming Distance">
-    <configuration default="false" name="189 rotate array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.652. Find Duplicate Subtrees">
+    <configuration default="false" name="632. Smallest Range" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/array_easy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/array_hard" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/array_easy/189 rotate array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/array_hard/632. Smallest Range.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="628. Maximum Product of Three Numbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="623. Add One Row to Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/array_easy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree_mid" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/array_easy/628. Maximum Product of Three Numbers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree_mid/623. Add One Row to Tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="389. Find the Difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="204. Count Primes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -363,45 +397,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hash_easy/389. Find the Difference.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hash_easy/204. Count Primes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="500. Keyboard Row" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="611. Valid Triangle Number" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hash_easy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/array_hard" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hash_easy/500. Keyboard Row.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/array_hard/611. Valid Triangle Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="461. Hamming Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="652. Find Duplicate Subtrees" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree_mid" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bit/461. Hamming Distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree_mid/652. Find Duplicate Subtrees.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -556,19 +590,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.189 rotate array" />
-      <item index="1" class="java.lang.String" itemvalue="Python.628. Maximum Product of Three Numbers" />
-      <item index="2" class="java.lang.String" itemvalue="Python.389. Find the Difference" />
-      <item index="3" class="java.lang.String" itemvalue="Python.500. Keyboard Row" />
-      <item index="4" class="java.lang.String" itemvalue="Python.461. Hamming Distance" />
+      <item index="0" class="java.lang.String" itemvalue="Python.632. Smallest Range" />
+      <item index="1" class="java.lang.String" itemvalue="Python.623. Add One Row to Tree" />
+      <item index="2" class="java.lang.String" itemvalue="Python.204. Count Primes" />
+      <item index="3" class="java.lang.String" itemvalue="Python.611. Valid Triangle Number" />
+      <item index="4" class="java.lang.String" itemvalue="Python.652. Find Duplicate Subtrees" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.461. Hamming Distance" />
-        <item index="1" class="java.lang.String" itemvalue="Python.500. Keyboard Row" />
-        <item index="2" class="java.lang.String" itemvalue="Python.389. Find the Difference" />
-        <item index="3" class="java.lang.String" itemvalue="Python.628. Maximum Product of Three Numbers" />
-        <item index="4" class="java.lang.String" itemvalue="Python.189 rotate array" />
+        <item index="0" class="java.lang.String" itemvalue="Python.652. Find Duplicate Subtrees" />
+        <item index="1" class="java.lang.String" itemvalue="Python.611. Valid Triangle Number" />
+        <item index="2" class="java.lang.String" itemvalue="Python.204. Count Primes" />
+        <item index="3" class="java.lang.String" itemvalue="Python.623. Add One Row to Tree" />
+        <item index="4" class="java.lang.String" itemvalue="Python.632. Smallest Range" />
       </list>
     </recent_temporary>
   </component>
@@ -589,10 +623,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="544" y="23" width="1080" height="709" extended-state="1" />
+    <frame x="402" y="30" width="1189" height="709" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22736031" sideWeight="0.4914842" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23103748" sideWeight="0.4914842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1618497" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -601,7 +635,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32252836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2568645" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33387357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39059967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22350675" sideWeight="0.50851583" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32782823" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -712,11 +746,6 @@
           <url>file://$PROJECT_DIR$/hash_easy/599. Minimum Index Sum of Two Lists.py</url>
           <line>13</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hash_easy/204. Count Primes.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hash_easy/204. Count Primes.py</url>
@@ -843,6 +872,21 @@
           <line>40</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tree_mid/623. Add One Row to Tree.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/array_hard/611. Valid Triangle Number.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tree_mid/652. Find Duplicate Subtrees.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -851,55 +895,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hash_easy/242. Valid Anagram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/204. Count Primes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="41" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/266 Palindrome Permutation .py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/290. Word Pattern.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/246 Strobogrammatic Number .py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/359 Logger Rate Limiter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sliding window/76. Minimum Window Substring.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1194,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_easy/389. Find the Difference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1203,15 +1203,31 @@
     <entry file="file://$PROJECT_DIR$/bit/461. Hamming Distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_easy/447 numbers of Boomerangs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash_easy/594. Longest Harmonious Subsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash_easy/500. Keyboard Row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="102" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1224,18 +1240,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/500. Keyboard Row.py">
+    <entry file="file://$PROJECT_DIR$/hash_easy/204. Count Primes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash_easy/594. Longest Harmonious Subsequence.py">
+    <entry file="file://$PROJECT_DIR$/array_hard/611. Valid Triangle Number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_mid/652. Find Duplicate Subtrees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_easy/235. Lowest Common Ancestor of a Binary Search Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_mid/623. Add One Row to Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array_hard/632. Smallest Range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding />
         </state>
       </provider>
