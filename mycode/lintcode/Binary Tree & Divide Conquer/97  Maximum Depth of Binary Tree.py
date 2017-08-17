@@ -71,6 +71,24 @@ class Solution1:
             self.traverse(root.right, depth + 1, result)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
     #        TREE 1
     # Construct the following tree

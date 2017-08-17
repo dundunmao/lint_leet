@@ -43,17 +43,16 @@ class Solution1(object):
         if root is None:
             return
         path.append(root.val)
-        self.sum_num(path,target)
+        self.sum_of(path,target)
         self.helper(root.left, target, path)
         self.helper(root.right, target, path)
         path.pop()
 
-    def sum_num(self, path, target):
-        tmp = target
+    def sum_of(self, path, target):
         l = len(path)-1
         for i in xrange(l , -1, -1):
-            tmp -= path[i]
-            if tmp == 0:
+            target -= path[i]
+            if target == 0:
                 self.res+=1
 
 class Solution(object):

@@ -43,49 +43,26 @@ class Solution:
             return
 
         path = []
-        father = None
-        self.findSum(root, father, target, path, results)
+        pre = None
+        self.findSum(root, pre, target, path, results)
 
         self.dfs(root.left, target, results)
         self.dfs(root.right, target, results)
 
-    def findSum(self, root, father, target, path, results):
+    def findSum(self, root, pre, target, path, results):
         path.append(root.val)
         target -= root.val
 
         if target == 0:
             results.append(path[:])
-
-        if root.parent not in [None, father]: #如果root的parent既不是None也不是father，root.parent就为新root，root为新father
+        #开始往三个方向check，在检查三个方向为不为None以及之前check过没
+        if root.parent not in [None, pre]:
             self.findSum(root.parent, root, target, path, results)
 
-        if root.left not in [None, father]:
+        if root.left not in [None, pre]:
             self.findSum(root.left, root, target, path, results)
 
-        if root.right not in [None, father]:
+        if root.right not in [None, pre]:
             self.findSum(root.right, root, target, path, results)
 
         path.pop()
-class Solution:
-    # @param {ParentTreeNode} root the root of binary tree
-    # @param {int} target an integer
-    # @return {int[][]} all valid paths
-    def binaryTreePathSum3(self, root, target):
-        # Write your code here
-        if root is None:
-            return 0
-        return self.helper(root,sum) + self.binaryTreePathSum3(root.left,sum)+ self.binaryTreePathSum3(root.right,sum)
-
-    def helper(self,root,sum):
-        count = 0
-        if root is None:
-            return 0
-        if root.val -
-    public int helper(TreeNode root,int sum){
-        int count  = 0;
-        if(root == null)return 0;
-        if(root.val - sum == 0)count++;
-        count += helper(root.left, sum - root.val);
-        count += helper(root.right, sum - root.val);
-        return count;
-    }
