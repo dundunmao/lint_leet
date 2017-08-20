@@ -37,7 +37,32 @@ class Solution1:
         # traverse
         self.helper(triangle,x+1,y,sum+triangle[x][y])
         self.helper(triangle, x + 1, y+1, sum+triangle[x][y])
+#第二种traverse
+class Solution6(object):
+    def __init__(self):
+        self.res = float('inf')
 
+    def minimumTotal(self, triangle):
+        """
+        :type triangle: List[List[int]]
+        :rtype: int
+        """
+        if triangle is None or triangle == []:
+            return 0
+        i = 0
+        j = 0
+        path = []
+        self.helper(triangle, i, j, path)
+        return self.res
+
+    def helper(self, array, i, j, path):
+        if i >= len(array):
+            self.res = min(self.res, sum(path))
+            return
+        path.append(array[i][j])
+        self.helper(array, i + 1, j, path)
+        self.helper(array, i + 1, j + 1, path)
+        path.pop()
 # 方法二 Divid & conquer.还是超时
 # 其time complex 是 O(2^n).
 class Solution2:
@@ -133,6 +158,7 @@ class Solution5:
 
 
 
+
 if __name__ == "__main__":
     triangle = [
         [2],
@@ -141,5 +167,5 @@ if __name__ == "__main__":
 
     # [6, 5, 7],
     # [4, 1, 8, 3]
-    s = Solution5()
-    print s.minimumTotal5(triangle)
+    s = Solution6()
+    print s.minimumTotal(triangle)

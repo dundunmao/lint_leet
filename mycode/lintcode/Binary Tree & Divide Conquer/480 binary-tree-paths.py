@@ -21,7 +21,7 @@ class TreeNode:
     def __init__(self, val):
         self.val = val
         self.left, self.right = None, None
-
+# traverse
 class Solution:
     # @param {TreeNode} root the root of the binary tree
     # @return {List[str]} all root-to-leaf paths
@@ -45,7 +45,7 @@ class Solution:
         # if root.right:
         self.helper(root.right,path,res)
         path.pop()
-
+# 分治
 class Solution:
     # @param {TreeNode} root the root of the binary tree
     # @return {List[str]} all root-to-leaf paths
@@ -63,3 +63,33 @@ class Solution:
         if len(path) == 0:
             path.append('' + str(root.val))
         return path
+if __name__ == '__main__':
+    # root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
+
+    #      10
+    #     /  \
+    #    5   -3
+    #   / \    \
+    #  3   2   11
+    # / \   \
+    #3  -2   1
+
+    P = TreeNode(10)
+    P.left = TreeNode(5)
+    P.left.left = TreeNode(3)
+    P.left.left.left = TreeNode(3)
+    P.left.left.right = TreeNode(-2)
+    P.left.right = TreeNode(2)
+    P.left.right.right = TreeNode(1)
+    P.right = TreeNode(3)
+    P.right.right = TreeNode(11)
+    t = 8
+    # Q = Node(26)
+    # Q.left = Node(10)
+    # Q.left.left = Node(4)
+    # Q.left.right = Node(6)
+    # Q.right = Node(3)
+    # # Q.right.right = Node(3)
+
+    s = Solution()
+    print s.binaryTreePaths(P)

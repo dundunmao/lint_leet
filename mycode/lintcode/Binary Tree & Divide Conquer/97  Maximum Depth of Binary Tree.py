@@ -70,20 +70,58 @@ class Solution1:
         if root.right:
             self.traverse(root.right, depth + 1, result)
 
+class Solution3:
+    """
+    @param root: The root of binary tree.
+    @return: An integer
+    """
+    # traverse
+    def __init__(self):
+        self.result = 0
+        self.path = []
+    def maxDepth(self, root):
+        p = []
+        self.traverse(root,1,p)
+        return self.result,self.path
+    def traverse(self, root, depth,p):
+        if root is None:
+            return
+        p.append(root)
+        if depth > self.result:
+            self.result = depth
+            self.path = p[:]
+        if root.left:
+            self.traverse(root.left, depth+1, p)
+        if root.right:
+            self.traverse(root.right, depth+1, p)
+        p.pop()
 
+class Solution4:
 
+    def maxDepth(self, root):
+        # write your code here
+        if root is None:
+            return 0
+        return self.helper(root)
 
-
-
-
-
-
-
-
-
-
-
-
+    def helper(self,root):
+        if root is None:
+            return 0,[]
+        [left,l_path] = self.helper(root.left)
+        [right,r_path] = self.helper(root.right)
+        p = [root]
+        if not p:
+            print "********"
+        if left > right:
+            if l_path:
+                return [left+1, p+l_path]
+            else:
+                return [left, p]
+        else:
+            if r_path:
+                return [right+1, p+r_path]
+            else:
+                return [right, p]
 
 
 
@@ -118,5 +156,6 @@ if __name__ == '__main__':
     # Q.right = Node(3)
     # # Q.right.right = Node(3)
 
-    s = Solution1()
-    print s.maxDepth(P)
+    s = Solution4()
+    res = s.maxDepth(P)
+    print [ele.val for ele in res[1]]

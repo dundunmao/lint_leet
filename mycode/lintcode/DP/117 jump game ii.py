@@ -13,7 +13,7 @@ class Solution:
     # @return an integer
 
     # greedy法
-    def jump(self, A):
+    def jump_greedy(self, A):
         p = [0]
         for i in range(len(A) - 1):
             while (i + A[i] >= len(p) and len(p) < len(A)):
@@ -34,69 +34,30 @@ class Solution:
 
 # 超时
 
-class Solution1:
-    # @param A, a list of integers
-    # @return an integer
-    def jump(self, A):
-        # write your code here
-        n = len(A)
-        f = [0 for i in range(n)]
-        # step[0] = 0
+class Solution1(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if nums is None or len(nums) == 0:
+            return 0
+        f = [float('inf') for i in range(len(nums))]
         f[0] = 0
-        for i in range(0, n):
-            if A[i] != 0:
-                for j in range(1, A[i] + 1):
-                    if f[i + j] == 0:
-                        f[i + j] = f[i] + 1
-                    else:
-                        f[i + j] = min(f[i + j], f[i] + 1)
-                    if i + j == n-1:
-                        return f[n - 1]
-        return f[n - 1]
-
-# 不对
-class Solution5:
-    # @param A, a list of integers
-    # @return an integer
-    def jump(self, A):
-        # write your code here
-        n = len(A)
-        f = [float('inf') for i in range(n)]
-        f[0] = 0
-        for i in range(0, n):
-            if f[i] != float('inf'):
-                for j in range(1, A[i] + 1):
-                    if i + j < n:
-                        f[i+j] = min(f[j], f[i] + 1)
-
-
+        for i in range(len(nums)):
+            # if nums[i]+i<len(nums):
+            j = i+1
+            while j <=nums[i]+i and j<len(nums):  #从i跳一步，能调到j，则从i-j这期间的步都是f[i]+1
+                f[j] = min(f[j], f[i]+1)
+                if j == len(nums) - 1:
+                    return f[j]
+                j += 1
         return f[-1]
-# 对,但超时
-class Solution4:
-    # @param A, a list of integers
-    # @return an integer
-    def jump(self, A):
-        # write your code here
-        n = len(A)
-        f = [0 for i in range(n)]
-        # f[0] = 1
-        for i in range(1, n):
-            for j in range(0, i):
-                if j == 0 and A[j]>=i:
-                    f[i] = 1
-                    break
-                if f[j] != 0 and j + A[j] >= i:
-                    if f[i] == 0:
-                        f[i] = f[j] + 1
-                    else:
-                        f[i] = min(f[i], f[j] + 1)
-        return f[-1]
-
 
 
 
 if __name__ == "__main__":
     # A = [2,3,1,1,4]
     A = [17,8,29,17,35,28,14,2,45,8,6,54,24,43,20,14,33,31,27,11]
-    s = Solution4()
-    print s.jump(A)
+    s = Solution()
+    print s.jump_greedy(A)

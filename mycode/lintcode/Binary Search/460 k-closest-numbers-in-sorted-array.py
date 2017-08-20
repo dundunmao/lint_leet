@@ -54,9 +54,63 @@ class Solution:
                     result.append(A[right])
                     right += 1
         return result
+
+
+class Solution1(object):
+    def kClosestNumbers(self, arr, x, k):
+        """
+        :type arr: List[int]
+        :type k: int
+        :type x: int
+        :rtype: List[int]
+        """
+        if arr == [] or arr is None or k == 0:
+            return []
+
+        s,e = self.binary(arr,x)
+        res = []
+        while s>= 0 and e<= len(arr) - 1:
+            left = abs(arr[s] - x)
+            right = abs(arr[e] - x)
+            if left <= right:
+                res.append([arr[s],left])
+                if len(res) == k:
+                    break
+                s = s - 1
+            elif left > right:
+                res.append([arr[e],right])
+                if len(res) == k:
+                    break
+                e = e + 1
+        if s < 0 and len(res) < k:
+            for i in range(k - len(res)):
+                res.append([arr[e],abs(arr[e] - x)])
+                e += 1
+                if e > len(arr) - 1:
+                    break
+        elif e >= len(arr):
+            for i in range(k - len(res)):
+                res.append([arr[s], abs(arr[s] - x)])
+                s -= 1
+                if s < 0:
+                    break
+        for i in range(len(res)):
+            if res[i][1] == res[i - 1][1] and res[i][0] < res[i-1][0]:
+                res[i],res[i-1] = res[i-1],res[i]
+        return [ele[0] for ele in res]
+    def binary(self,arr,x):
+        s = 0
+        e = len(arr) - 1
+        while s+1<e:
+            m = s + (e-s)/2
+            if x >= arr[m]:
+                s = m
+            else:
+                e = m
+        return s,e
 if __name__ == "__main__":
-    A =[1,2,3]
-    target = 2
-    k = 3
-    s = Solution()
+    A =[1,10,15,25,35,45,50,59]
+    target = 30
+    k = 0
+    s = Solution1()
     print s.kClosestNumbers(A, target, k)

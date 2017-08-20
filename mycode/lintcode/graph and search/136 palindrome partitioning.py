@@ -11,6 +11,8 @@
 #   ["aa", "b"],
 #   ["a", "a", "b"]
 # ]
+
+# traverse
 class Solution:
     # @param s, a string
     # @return a list of lists of string
@@ -20,10 +22,9 @@ class Solution:
             return []
         result = []
         path = []
-        # pos = 0
-        self.help_function(s,path,0,result)
+        pos = 0
+        self.help_function(s,path,pos,result)
         return result
-
     def help_function(self,s, path,pos,result):
         if pos == len(s):   #起始点遍历到最后一位时,说明完成了.
             path_save = [x for x in path]
@@ -36,7 +37,6 @@ class Solution:
             path.append(prefix)
             self.help_function(s, path, i+1, result)
             path.pop()
-
     def isPalindrome(self, s):
         beg = 0
         end = len(s)-1
@@ -47,7 +47,45 @@ class Solution:
             end -= 1
         return True
 
+# divide&conquer
+class Solution1(object):
+    def partition(self, s):
+        """
+        :type s: str
+        :rtype: List[List[str]]
+        """
+        if s == '':
+            return False
+        return self.helper(s)
+    def helper(self, s):
+        if s == '':
+            return []
+        if len(s) == 1:
+            return [[s]]
+        res = []
+        for i in range(1, len(s) + 1):
+            if self.is_pali(s[:i]):
+                A = self.helper(s[i:])
+                if A == []:
+                    res.append([s[:i]])
+                for ele in A:
+                    res.append([s[:i]] + ele)
+        return res
+    def is_pali(self, s):  # return boolean
+        if len(s) == 0:
+            return True
+        i = 0
+        j = len(s) - 1
+        while i < j:
+            if s[i] != s[j]:
+                return False
+            i += 1
+            j -= 1
+        return True
+
+
 if __name__ == '__main__':
     s = "aab"
-    x = Solution()
+    s = 'cbb'
+    x = Solution1()
     print x.partition(s)
