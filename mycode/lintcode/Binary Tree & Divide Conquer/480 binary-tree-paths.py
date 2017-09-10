@@ -63,9 +63,27 @@ class Solution:
         if len(path) == 0:
             path.append('' + str(root.val))
         return path
+# 我的分治，略微不同
+class Solution:
+    # @param {TreeNode} root the root of the binary tree
+    # @return {List[str]} all root-to-leaf paths
+    def binaryTreePaths(self, root):
+        # Write your code here
+        if root is None:
+            return []
+        if root.left is None and root.right is None:
+            return [[root.val]]
+        l = self.binaryTreePaths(root.left)
+        r = self.binaryTreePaths(root.right)
+        for ele in l:
+            ele.insert(0, root.val)
+        for ele in r:
+            ele.insert(0, root.val)
+        return l + r
+
+
 if __name__ == '__main__':
     # root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
-
     #      10
     #     /  \
     #    5   -3
@@ -91,5 +109,5 @@ if __name__ == '__main__':
     # Q.right = Node(3)
     # # Q.right.right = Node(3)
 
-    s = Solution()
+    s = Solution5()
     print s.binaryTreePaths(P)

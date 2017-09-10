@@ -54,6 +54,24 @@ class Solution1(object):
             result += [item + [num] for item in result]
         return result
 
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if nums is None or len(nums) == 0:
+            return []
+        res = [[]]
+        path = []
+        self.helper(nums, res, path)
+        return res
+    def helper(self, nums, res, path):
+        for i in range(len(nums)):
+            path.append(nums[i])
+            res.append(path[:])
+            self.helper(nums[i+1:], res, path)
+            path.pop()
 if __name__ == '__main__':
     S = [1,2,3,4]
     s = Solution()

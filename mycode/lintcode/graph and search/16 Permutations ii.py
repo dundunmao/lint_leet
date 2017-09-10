@@ -43,49 +43,41 @@ class Solution:
             list.pop()
             visit[j] = False
 
-
-
-
-class Solution1:
-    """
-    @param nums: A list of Integers.
-    @return: A list of permutations.
-    """
+#我的练习
+class Solution1(object):
     def permuteUnique(self, nums):
-        # write your code here
-        if nums is None or len(nums) == 0:
-            return []
-        list = {}
-        result = []
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = []
+        path = []
+        last = None
+        pos = []
+        index = None
         nums.sort()
-        self.helper(result, list, nums)
-        return result
-    def helper(self, result, list, nums):
-        list_com = []
-        if len(list) == len(nums):
-            list_save = [x for x in list.values()]
-            result.append(list_save)
-            # return
-        for j in range(len(nums)):
-
-            if (j, nums[j]) in list.items():
-                continue
-            list[j] = nums[j] # list.append(nums[j])
-            if list.values() == list_com:
-                del list[j]
-                continue
-            list_com = [x for x in list.values()]
-
-            self.helper(result,list,nums)
-
-            del list[j]
-
-
+        self.helper(nums, res, path, last, pos, index)
+        return res
+    def helper(self, nums, res, path, last, pos, index):
+        if len(path) == len(nums):
+            if path not in res:
+                res.append(path[:])
+            return
+        for i in range(len(nums)):
+            if i not in pos:
+                if last != nums[i] or len(path) != index:
+                    path.append(nums[i])
+                    pos.append(i)
+                    self.helper(nums, res, path, last, pos, index)
+                    index = len(path) - 1
+                    last = path.pop()
+                    pos.pop()
 
 
 
 
 if __name__ == '__main__':
-    nums = [1,2,2]
-    s= Solution()
+    nums = [1,1,2]
+    nums = [3,3,0,3]
+    s= Solution1()
     print s.permuteUnique(nums)

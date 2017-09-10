@@ -17,60 +17,86 @@
 #   [2, 4],
 #   [1, 3, 2]
 # ]
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
+# DFS
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
 
-class Solution1(object):
+class Solution:
+    # @param {TreeNode} root the root of binary tree
+    # @param {int} target an integer
+    # @return {int[][]} all valid paths
     def __init__(self):
-        self.res = 0
-    def pathSum(self, root, target):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
-        if root is None:
-            return 0
+        self.res = []
+    def binaryTreePathSum2(self, root, target):
+        # Write your code here
         path = []
         self.helper(root, target, path)
         return self.res
-
     def helper(self, root, target, path):
         if root is None:
             return
         path.append(root.val)
-        self.sum_of(path,target)
+        self.sum_from_end(path,target)
         self.helper(root.left, target, path)
         self.helper(root.right, target, path)
         path.pop()
-
-    def sum_of(self, path, target):
-        l = len(path)-1
-        for i in xrange(l , -1, -1):
+    def sum_from_end(self,path,target):
+        re = []
+        for i in range(len(path) - 1, -1, -1):
             target -= path[i]
             if target == 0:
-                self.res+=1
+                re.append(i)
+        if re == []:
+            return
+        for i in re:
+            p = path[i:]
+            self.res.append(p[:])
 
-class Solution(object):
-    def pathSum(self, root, target):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
+# BFS
+from Queue import Queue
+
+
+class Solution2:
+    # @param {TreeNode} root the root of binary tree
+    # @param {int} target an integer
+    # @return {int[][]} all valid paths
+    def __init__(self):
+        self.res = []
+    def binaryTreePathSum2(self, root, target):
+        # Write your code here
         if root is None:
-            return 0
+            return []
+        q = Queue()
+        q.put([root, [root.val]])
+        while q.qsize() > 0:
+            le = q.qsize()
+            for i in range(le):
+                [cur, inside_array] = q.get()
+                self.sum_from_end(inside_array, target)
+                if cur.left:
+                    a = inside_array[:]
+                    a.append(cur.left.val)
+                    q.put([cur.left, a])
+                if cur.right:
+                    b = inside_array[:]
+                    b.append(cur.right.val)
+                    q.put([cur.right, b])
+        return self.res
 
-        root_l = self.pathSum(root.left, target-root.val)
-        root_r = self.pathSum(root.right, target - root.val)
-        l = self.pathSum(root.left, target)
-        r = self.pathSum(root.right, target)
-        return root_l+root_r+l+r
-
+    def sum_from_end(self, path, target):
+        re = []
+        for i in range(len(path) - 1, -1, -1):
+            target -= path[i]
+            if target == 0:
+                re.append(i)
+        if re == []:
+            return
+        for i in re:
+            p = path[i:]
+            self.res.append(p[:])
 
 
 if __name__ == '__main__':
@@ -101,5 +127,6 @@ if __name__ == '__main__':
     # Q.right = Node(3)
     # # Q.right.right = Node(3)
 
-    s = Solution()
-    print s.pathSum(P,t)
+    s = Solution2()
+    print s.binaryTreePathSum2(P,t)
+    # [[5, 3], [5, 2, 1]]

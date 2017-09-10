@@ -87,6 +87,30 @@ class Solution1:
         l = self.helper(root.left, root, le)
         r = self.helper(root.right, root, le)
         return max(l,r,le)
+# 我自己的练习
+class Solution1:
+    # @param {TreeNode} root the root of binary tree
+    # @return {int} the length of the longest consecutive sequence path
+    def longestConsecutive(self, root):
+        # Write your code here
+        le, con = self.helper(root)
+        return le
+    def helper(self, root):
+        if root is None:
+            return 0,0
+        if root.left is None and root.right is None:
+            return 1,1
+        l, con_l = self.helper(root.left)
+        r, con_r = self.helper(root.right)
+        if root.left and root.left.val - 1 == root.val:
+            con_l += 1
+        else:
+            con_l = 1
+        if root.right and root.right.val - 1 == root.val:
+            con_r += 1
+        else:
+            con_r = 1
+        return (max(l,r,con_l,con_r),max(con_l,con_r))
 if __name__ == '__main__':
     #   2
     #    \
@@ -109,7 +133,7 @@ if __name__ == '__main__':
     # Q.right.right = TreeNode(3)
 
 
-    s = Solution()
+    s = Solution1()
     print s.longestConsecutive(Q)
 
 

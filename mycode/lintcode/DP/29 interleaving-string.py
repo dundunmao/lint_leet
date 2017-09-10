@@ -20,23 +20,30 @@ class Solution:
         # write your code here
         if s1 is None or s2 is None or s3 is None:
             return False
-        if len(s1) + len(s2) != len(s3):
+        if len(s3) != len(s1)+len(s2):
             return False
-        interleave = [[False] * (len(s2) + 1) for i in range(len(s1) + 1)]
-        interleave[0][0] = True
-        for i in range(1,len(s1) + 1):
-            interleave[i][0] = (s1[:i] == s3[:i])
-        for i in range(1,len(s2) + 1):
-            interleave[0][i] = s2[:i] == s3[:i]
-        for i in range(1,len(s1) + 1):
-            for j in range(1,len(s2) + 1):
-                if s1[i - 1] == s3[i + j - 1]:
-                    interleave[i][j] = interleave[i - 1][j]
-                    if interleave[i][j] == True:
+        len1 = len(s1)
+        len2 = len(s2)
+        f = [[False for j in range(len2 + 1)] for i in range(len1 + 1)]
+        # print f
+        f[0][0] = True
+        for i in range(1,len1+1):
+            if s1[i-1] == s3[i-1]:
+                f[i][0] = f[i-1][0]
+        for j in range(1,len2+1):
+            if s2[j-1] == s3[j-1]:
+                f[0][j] = f[0][j-1]
+        for i in range(1,len1+1):
+            for j in range(1, len2+1):
+                if s1[i-1] == s3[i+j-1]:
+                    f[i][j] = f[i-1][j]
+                    if f[i][j]:
                         continue
-                if s2[j - 1] == s3[i + j - 1]:
-                    interleave[i][j] = interleave[i][j - 1]
-        return interleave[len(s1)][len(s2)]
+                if s2[j-1] == s3[i+j-1]:
+                    f[i][j] = f[i][j-1]
+                    if f[i][j]:
+                        continue
+        return f[len1][len2]
 
 if __name__ == "__main__":
     s1 = "sdfjas;dfjoisdufzjkndfasdkfja;sdfa;dfa;dfaskdjhfasdhjdfakhdgfkajdfasdjfgajksdfgaksdhfasdkbfjkdsfbajksdfhakjsdfbajkdfbakdjsfgaksdhgfjkdsghfkdsfgadsjfgkajsdgfkjasdfh"

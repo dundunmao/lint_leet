@@ -70,9 +70,41 @@ class Solution:
             cols[col] = row
             self.search(row + 1, num, results, cols)
             del cols[col]
+# 我的方法
+class Solution1(object):
+    def solveNQueens(self, n):
+        """
+        :type n: int
+        :rtype: List[List[str]]
+        """
+        res = []
+        hash = {}
+        row = 0
+        self.helper(n, row, hash, res)
+        return res
+    def helper(self,n, row, hash, res):
+        if len(hash) == n:
+            string  = ['']*n
+            for col,row in hash.items():
+                s = ('.'*col + 'Q' + '.'*(n-col-1))
+                string[row] = s
+            res.append(string[:])
+            return
+        for col in range(n):
+            if col in hash:
+                continue
+            if self.attack(col, row, hash):
+                continue
+            hash[col] = row
+            self.helper(n, row+1, hash, res)
+            hash.pop(col)
 
-
+    def attack(self, col, row, hash):
+        for c, r in hash.items():
+            if c+r == col +row or r - c ==  row - col:
+                return True
+        return False
 if __name__ == '__main__':
     n=4
-    s = Solution()
+    s = Solution1()
     print s.solveNQueens(n)

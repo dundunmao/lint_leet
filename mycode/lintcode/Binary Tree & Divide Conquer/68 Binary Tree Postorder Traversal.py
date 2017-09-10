@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class TreeNode:
     def __init__(self, val):
         self.val = val
@@ -49,6 +50,30 @@ class Solution:
             pre = cur
         return result
 
+# 非常简单的方法
+class Solution3(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+
+        if root is None:
+            return []
+        pre = None
+        cur = root
+        res = []
+        stack = [cur]
+        res = []
+        while stack:
+            cur = stack.pop()
+            res.append(cur.val)
+            if cur.left:
+                stack.append(cur.left)
+            if cur.right:
+                stack.append(cur.right)
+        res.reverse()
+        return res
 if __name__ == '__main__':
     #        TREE 1
     # Construct the following tree
@@ -77,7 +102,7 @@ if __name__ == '__main__':
     # Q.right = Node(3)
     # # Q.right.right = Node(3)
 
-    s = Solution()
-    print s.postorderTraversal_1(P)
+    s = Solution3()
+    print s.postorderTraversal(P)
 
 

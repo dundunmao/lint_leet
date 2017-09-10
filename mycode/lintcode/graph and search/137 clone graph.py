@@ -64,3 +64,65 @@ class Solution:
                     set[neighbor] = True
                     queue.put(neighbor)
         return set
+
+
+class UndirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+from Queue import Queue
+
+
+class Solution1:
+    # @param node, a undirected graph node
+    # @return a undirected graph node
+    def __init__(self):
+        self.hash = {}
+
+    def cloneGraph(self, node):
+        if node is None:
+            return None
+        nodes = self.get_node(node)
+        for ele in nodes:
+            self.hash[ele] = UndirectedGraphNode(ele.label)
+        for ele in nodes:
+            new_node = self.hash[ele]
+            for nei in ele.neighbors:
+                new_nei = self.hash[nei]
+                new_node.neighbors.append(new_nei)
+        return self.hash[node]
+
+    def get_node(self, node):
+        q = Queue()
+        set = {}
+        q.put(node)
+        while q.qsize()>0:
+            cur = q.get()
+            if not set.has_key(cur):
+                set[cur] = True
+            if cur.neighbors != []:
+                for ele in cur.neighbors:
+                    if ele not in set:
+                        q.put(ele)
+        return set.keys()
+if __name__ == '__main__':
+    #        TREE 1
+    # Construct the following tree
+    #          1
+    #        /   \
+    #      2     3
+    #    /   \
+    #  4      5
+    #        / \
+    #       6   7
+    #            \
+    #             8
+    P1 = UndirectedGraphNode(1)
+    # P1.neighbors = [P2,P3]
+    P1.neighbors = [UndirectedGraphNode(2), UndirectedGraphNode(3)]
+    # P2 =
+    # P2.neighbors = [P4]
+    # P3 = UndirectedGraphNode(3)
+
+    s = Solution1()
+    print s.cloneGraph(P1)

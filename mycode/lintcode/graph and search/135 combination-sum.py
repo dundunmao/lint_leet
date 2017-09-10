@@ -44,32 +44,36 @@ class Solution:
 
             prev = candidates[i]
 
-# class Solution1:
-#     # @param candidates, a list of integers
-#     # @param target, integer
-#     # @return a list of lists of integers
-#     def combinationSum(self, candidates, target):
-#         # write your code here
-#         candidates.sort()
-#         Solution.ret = []
-#         self.DFS(candidates, target, 0, [])
-#         return Solution.ret
-#
-#     def DFS(self, candidates, target, start, path):
-#         length = len(candidates)
-#         if target == 0:
-#             return Solution.ret.append(path)
-#         for i in range(start, length):
-#             if target < candidates[i]:
-#                 return
-#             self.DFS(candidates, target - candidates[i], i, path + [candidates[i]])
+class Solution1(object):
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        path = []
+        res = []
+        pos = 0
+        candidates.sort()
+        self.helper(candidates, target, path, res, pos)
+        return res
+    def helper(self, A, target, path, res, pos):
+        if target == 0:
+            res.append(path[:])
+            return
+        for i in range(pos, len(A)):
+            if A[i] > target:
+                break
+            path.append(A[i])
+            self.helper(A, target - A[i], path, res, i)
+            path.pop()
 
 if __name__ == '__main__':
-    candidates = [2,6,7]
-    candidates2 =  [8, 7, 4, 3]
-    target = 6
+    candidates = [2,6,7] #[[7],[2, 2, 3]]
+    candidates2 =  [8, 7, 4, 3]  #[[3, 4, 4], [3, 8], [4, 7]]
+    target = 7
     target2 = 11
-    s = Solution()
+    s = Solution1()
     print s.combinationSum(candidates2, target2)
 
 

@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+#这个有用并查集，bfs两种方法。
 class union_find:
 
     # @param {int} n
@@ -64,7 +65,8 @@ class Solution:
 
 
 # 方法二: BFS
-
+# 从一个点出发，上下左右扩展，能扩展的queue里，每次从queue里拿node进行一次bfs
+# 复杂度：每个点只能参与一次bfs，所以是O（n）
 from Queue import Queue
 class Solution1:
     # @param {boolean[][]} grid a boolean 2D matrix
@@ -102,7 +104,7 @@ class Solution1:
                 q.put(i * m + j+1)
                 grid[i][j+1] = False
 # dfs
-# 这题用bfs不好,因为如果都是1,递归深度太高.
+# 这题用bfs不好,因为如果都是1,每个点都要遍历，递归深度太高，达到了n*m.
 # 是一个染色问题,从一个点出发去看在不在一个联通块,在的话,染色(标记).
 # 再看下一个点,如果这个点即没染色,又是1,那么从这个点出发,遍历,如果走到已经染过色的,就不走.
 
