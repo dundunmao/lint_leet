@@ -12,7 +12,38 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 给出 height = [2,1,5,6,2,3]，返回 10
-
+# 单调栈的好理解的方法：
+class Solution_mono_easy(object):
+    def largestRectangleArea(self, A):
+        """
+        :type heights: List[int]
+        :rtype: int
+        """
+        if A is None or A == []:
+            return 0
+        ans = 0
+        le = len(A)
+        left = [0 for i in range(le)]
+        left[0] = 0
+        stack_left = [(A[0],0)]
+        for i in range(1, le):
+            x = i
+            while stack_left and stack_left[-1][0] >= A[i]:
+                _,x = stack_left.pop()
+            stack_left.append((A[i],x))
+            left[i] = x
+        right = [0 for i in range(le)]
+        right[-1] = le-1
+        stack_right = [(A[-1],le-1)]
+        for i in range(le - 2, -1, -1):
+            x = i
+            while stack_right and stack_right[-1][0] >= A[i]:
+                _,x = stack_right.pop()
+            stack_right.append((A[i],x))
+            right[i] = x
+        for i in range(le):
+            ans = max(ans, A[i] * (right[i] - left[i] + 1))
+        return ans
 # 单调栈法(Monotone Stack)
     # for每一个木头,以他作为最矮的那个直方块,(看包括他的最大能往左往右走的距离).
     # 所以题的关键是找到一个木头,左右第一个比他小的那个木头是谁.————这里就引出了"单调栈"
@@ -138,5 +169,6 @@ class Solution:
 if __name__ == '__main__':
 
     list = [2,1,5,6,2,3]
-    s = Solution_for_three()
+    list = [0,9]
+    s = Solution_mono_easy()
     print s.largestRectangleArea(list)

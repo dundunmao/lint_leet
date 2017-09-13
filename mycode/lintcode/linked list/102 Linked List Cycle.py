@@ -12,20 +12,19 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
-class Solution:
-    """
-    @param head: The first node of the linked list.
-    @return: True if it has a cycle, or false
-    """
+class Solution(object):
     def hasCycle(self, head):
-        # write your code here
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
         if head is None or head.next is None:
             return False
-        fast = head.next
-        slow = head
-        while fast != slow:
-            if fast is None or fast.next is None:
-                return False
-            fast = fast.next.next
+        slow =  head
+        fast = head
+        while fast != None and fast.next != None:
             slow = slow.next
-        return True
+            fast = fast.next.next
+            if fast == slow:
+                return True
+        return False

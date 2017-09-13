@@ -13,24 +13,24 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
-class Solution:
-    """
-    @param head: The first node of the linked list.
-    @return: The node where the cycle begins.
-                if there is no cycle, return null
-    """
+class Solution(object):
     def detectCycle(self, head):
-        # write your code here
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
         if head is None or head.next is None:
             return None
-        slow = head
-        fast = head.next
-        while slow != fast:
-            if fast is None or fast.next is None:
-                return None
-            fast = fast.next.next
+        slow =  head
+        fast = head
+        while fast != None and fast.next != None:
             slow = slow.next
-        while head != slow.next:
+            fast = fast.next.next
+            if fast == slow:
+                break
+        if fast == None or fast.next == None:
+            return None
+        while head != slow:
             head = head.next
             slow = slow.next
         return head
