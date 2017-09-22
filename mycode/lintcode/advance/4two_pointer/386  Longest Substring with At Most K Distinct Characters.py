@@ -5,6 +5,26 @@
 class Solution:
     # @param s : A string
     # @return : An integer
+
+    # follow up:求一串string里最长子串,其中不能有char重复k次以上
+    def lengthOfLongestSubstringKDistinct(self, s, k):
+        # write your code here
+        # max_len = 0
+        map = [0 for i in range(256)]
+        i, j = 0, 0
+        ans = 0
+        for i in range(len(s)):
+            while j < len(s):
+                if map[ord(s[j])] == k:
+
+                    break
+                map[ord(s[j])] += 1
+                ans = max(ans, j - i)
+                j += 1
+            map[ord(s[i])] -= 1
+        return ans
+
+class Solution1:
     def lengthOfLongestSubstringKDistinct(self, s, k):
         # write your code here
         max_len = 0
@@ -28,7 +48,7 @@ class Solution:
                     del map[s[i]]
         return max_len
 if __name__ == "__main__":
-    s = Solution()
+    s = Solution1()
     x = "eceba"   # "eceb" which its length is 4.
     k = 3
     print s.lengthOfLongestSubstringKDistinct(x,k)

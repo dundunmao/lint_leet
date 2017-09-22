@@ -7,7 +7,29 @@
 # 样例
 # 给出数组A =[1,1,2]，你的函数应该返回长度2，此时A=[1,2]。
 # 给一个sorted array, 返回无重复数的array,包括重复的数
-class Solution:
+
+# 方法一：喂食法
+#i是找食物的，cur是吃货。cur不能吃跟昨天一样的东西，所以cur每过一天，就看如果昨天吃过了，就等在那，i往下遍历找吃的，找跟昨天不一样的吃的。
+# 找到了就喂给它，两人一起往下走一天。
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # edge case
+        if nums is None or len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return 1
+        cur = 1
+        for i in range(1,len(nums)):
+            if nums[cur - 1] != nums[i]:
+                nums[cur] = nums[i]
+                cur += 1
+        return cur
+
+class Solution1:
     """
     @param A: a list of integers
     @return an integer
@@ -30,28 +52,6 @@ class Solution:
         return count
 
 
-class Solution(object):
-    #我只是数了count，却没有remove，所以不对
-    def removeDuplicates_wrong(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # edge case
-        if nums is None or len(nums) == 0:
-            return 0
-        # normal case
-        count = 1
-        i = 1
-        flag = nums[0]
-        while i < len(nums):
-            if nums[i] == flag:
-                i += 1
-            else:
-                flag = nums[i]
-                count += 1
-                i += 1
-        return count
 # i是遍历找非dup，j是需要被换的地方
     def removeDuplicates_leet(self, nums):
         """
@@ -76,25 +76,7 @@ class Solution(object):
                 i += 1
                 j += 1
         return j
-#i是找食物的，cur是吃货。cur不能吃跟昨天一样的东西，所以cur每过一天，就看如果昨天吃过了，就等在那，i往下遍历找吃的，找跟昨天不一样的吃的。
-# 找到了就喂给它，两人一起往下走一天。
-class Solution(object):
-    def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # edge case
-        if nums is None or len(nums) == 0:
-            return 0
-        if len(nums) == 1:
-            return 1
-        cur = 1
-        for i in range(1,len(nums)):
-            if nums[cur - 1] != nums[i]:
-                nums[cur] = nums[i]
-                cur += 1
-        return cur
+
 
 if __name__ == "__main__":
     a = [1,2,2,2,2,4,4]

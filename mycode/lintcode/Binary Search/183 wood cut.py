@@ -9,6 +9,7 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 有3根木头[232, 124, 456], k=7, 最大长度为114.
+
 class Solution:
     """
     @param L: Given n pieces of wood with length L[i]

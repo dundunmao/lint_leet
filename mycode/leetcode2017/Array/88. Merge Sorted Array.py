@@ -32,6 +32,7 @@ class Solution(object):
 
 
 
+
 if __name__ == "__main__":
     nums1 = [1,0]
     m = 1

@@ -11,6 +11,8 @@
 # 样例
 # 给出 numbers = [2, 7, 11, 15], target = 9, 返回 [1, 2].
 # 求那两个element之和为target
+
+# two pointer
 class Solution_value:
 
     def twoSum(self, numbers, target):
@@ -68,19 +70,19 @@ class Solution_index:
             else:
                 return None
 
-
+# hash
 class Solution(object):
     def twoSum(self, nums, target):
         #hash用于建立数值到下标的映射
         dic = {}
         #循环nums数值，并添加映射
-        for j in range(len(nums)):
-            if target - nums[j] in dic:
-                return [dic[target - nums[j]], j]
-            dic[nums[j]] = j
+        for i in range(len(nums)):
+            if target - nums[i] in dic:
+                return [dic[target - nums[i]], i]
+            dic[nums[i]] = i
         #无解的情况
         return [-1, -1]
-# 我的练习
+# 我的练习 two pointer
 class Solution2:
     """
     @param numbers : An array of Integer

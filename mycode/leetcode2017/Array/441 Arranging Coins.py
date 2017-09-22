@@ -51,3 +51,24 @@ class Solution(object):
     def sum_l(self, r):
         res = (1 + r) * r / 2
         return res
+class Solution1(object):
+    def arrangeCoins(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        s = 0
+        e = n
+        while s + 1 < e:
+            mid = s + (e - s) / 2
+            x = (1 + mid) * mid / 2
+            if x > n:
+                e = mid
+            elif x < n:
+                s = mid
+            else:
+                return mid
+        if (1 + e) * e / 2 <= n:
+            return e
+        else:
+            return s

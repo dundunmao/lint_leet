@@ -54,30 +54,35 @@ class Solution:
             pre = cur
             cur = temp
         return pre
-# 快慢指针走，慢的边走边把值存入stack。
-# 快的到头时，stack存了前一半的值，慢指针继续往下走，边走边往外pop
-# 最后都pop没了就是panlin.
-class Solution(object):
+class Solution4:
+    # @param head, a ListNode
+    # @return a boolean
     def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
-        if not head:
+        # Write your code here
+        if head is None or head.next is None:
             return True
-        fast = head
         slow = head
-        stack = []
-        while fast and fast.next:
-            stack.append(slow.val)
-            slow = slow.next
+        fast = head
+        pre =  None
+        while fast is not None and fast.next is not None:
             fast = fast.next.next
-        if fast:
-            slow = slow.next  #让出中间点
-        while slow:
-            if slow.val != stack.pop():
-                return False
-            slow = slow.next
+            slow.next, pre, slow = pre, slow, slow.next
+        if fast == None:
+            left = slow.next
+            right = slow
+            while left is not None and right is not None:
+                if left.val != right.val:
+                    return False
+                left = left.next
+                right = right.next
+        else:
+            left = slow
+            right = slow
+            while left is not None and right is not None:
+                if left.val != right.val:
+                    return False
+                left = left.next
+                right = right.next
         return True
 #leet方法：
 class Solution1(object):
@@ -108,13 +113,46 @@ class Solution1(object):
                 return False
             head, end = head.next, end.next
         return True
+
+
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    # @param head, a ListNode
+    # @return a boolean
+    def isPalindrome(self, head):
+        # Write your code here
+        if head is None or head.next is None:
+            return True
+        slow = head
+        fast = head
+        pre =  None
+        while fast is not None and fast.next is not None:
+            fast = fast.next.next
+            slow.next, pre, slow = pre, slow, slow.next
+        if fast == None:
+            left = pre
+            right = slow
+        else:
+            left = pre
+            right = slow.next
+        while left is not None and right is not None:
+            if left.val != right.val:
+                return False
+            left = left.next
+            right = right.next
+        return True
+
 if __name__ == '__main__':
 
     P = ListNode(10)
     P.next = ListNode(2)
-    P.next.next = ListNode(10)
+    # P.next.next = ListNode(10)
     # P.next.next.next = ListNode(7)
     # P.next.next.next.next = ListNode(8)
     # P.next.next.next.next.next = ListNode(10)
-    s = Solution1()
+    s = Solution4()
     print s.isPalindrome(P)
