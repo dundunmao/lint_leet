@@ -1,0 +1,37 @@
+//n total dollars, each choclate c dollars, m wrapper can get one choclate
+public class Solution {
+  public int chocalateFeast(int n, int c, int m) {
+    int count = n / c;
+    int wrapper = count;
+    while (wrapper / m != 0) {
+      count += wrapper / m;
+      wrapper = wrapper / m + wrapper % m;
+    }
+    return count;
+  }
+}
+
+//test//
+
+Main answer = new Main();
+int result = answer.chocalateFeast(6,2,2);
+System.out.println("The main value is :" + result);
+
+///scan from the system version.
+public static void main(String[] args) {
+  Scanner in = new Scanner(System.in);
+  int t = in.nextInt();
+  for(int a0 = 0; a0 < t; a0++){
+      int n = in.nextInt();
+      int c = in.nextInt();
+      int m = in.nextInt();
+      int total = n / c;
+      int wrappers = total;
+      while(wrappers >= m) {
+        total += (wrappers / m);
+        int leftover = wrappers % m;
+        wrappers = (wrappers / m) + leftover;
+      }
+      System.out.println(total);
+    }
+}

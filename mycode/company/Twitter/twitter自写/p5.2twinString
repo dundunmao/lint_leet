@@ -1,0 +1,78 @@
+public class Solution {
+  public String[] twinString(String[] array1, String[] array2) {
+        boolean flag = true;
+        int sizeSmall, sizeLarge = 0;
+        if (array1.length != array2.length) {
+            sizeSmall = Math.min(array1.length, array2.length);
+            sizeLarge = Math.max(array1.length, array2.length);
+            flag = false;
+        } else {
+            sizeSmall = sizeLarge = array1.length;
+        }
+        String[] result = new String[sizeLarge];
+        for (int i = 0; i < sizeSmall; i++) {
+            if (isTwin(array1[i], array2[i])) {
+                result[i] = "Yes";
+            } else {
+                result[i] = "No";
+            }
+        }
+        if (flag == false) {
+            for (int i = sizeSmall; i < sizeLarge; i++) {
+                result[i] = "No";
+            }
+        }
+        return result;
+    }
+
+    private boolean isTwin(String s1, String s2) {
+        if(s1.length() != s2.length()) {
+            return false;
+        }
+        StringBuilder sb1e = new StringBuilder(); //even
+        StringBuilder sb1o = new StringBuilder();
+        StringBuilder sb2e = new StringBuilder();
+        StringBuilder sb2o = new StringBuilder();
+
+        for (int i = 0; i < s1.length(); i++) {
+            if (i % 2 == 0) {
+                sb1e.append(s1.charAt(i)); // why add + ""
+                sb2e.append(s2.charAt(i));
+            } else {
+                sb1o.append(s1.charAt(i));
+                sb2o.append(s2.charAt(i));
+            }
+        }
+        String evenS1 = sb1e.toString();
+        String oddS1 = sb1o.toString();
+        String evenS2 = sb2e.toString();
+        String oddS2 = sb2o.toString();
+        return isAnagram(evenS1, evenS2) && isAnagram(oddS1, oddS2);
+    }
+
+    private boolean isAnagram(String s, String t) {
+      int[] alphabet = new int[26];
+      for (int i = 0; i < s.length(); i++) {
+        alphabet[s.charAt(i) - 'a']++;
+      }
+      for (int i = 0; i < t.length(); i++) {
+        alphabet[t.charAt(i) - 'a']--;
+      }
+      for (int i : alphabet) {
+        if (i != 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+}
+
+
+//test ////
+String[] array4 = new String[]{"aeiou", "qwertyu", "abc"};
+String[] array3 = new String[]{"uoiea", "qwerpyt", "cb"};
+String[] result = answer.twinString(array4, array3);
+  for (int i = 0; i < result.length; i++) {
+    System.out.println("The result is : +" + result[i]);
+  }

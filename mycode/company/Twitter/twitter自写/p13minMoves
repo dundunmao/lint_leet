@@ -1,0 +1,21 @@
+public class Solution {
+  public int minMoves(int[] array1, int[] target) {
+    int count = 0;
+    for (int i = 0; i < array1.length; i++) {
+      int number1 = array1[i];
+      int number2 = target[i];
+      while (number1 != 0 && number2 != 0) {
+        count += Math.abs(number1 % 10 - number2 % 10);
+        number1 /= 10;
+        number2 /= 10;
+      }
+    }
+    return count;
+  }
+}
+
+//test//
+       Main answer = new Main();
+       int[] test1 = {1234, 4321};
+       int[] target = {2345, 3214};
+       int result = answer.minMoves(test1, target);

@@ -1,0 +1,50 @@
+//Time Complexity O(nlogn)
+public class Solution {
+  public int distance(int a, int[] input, int d) {
+    if (input == null || input.length == 0) {
+      return 0;
+    }
+    Arrays.sort(input);
+    int count = 0;
+    if (a < 2) {
+      return 0;
+    }
+    for (int i = 0; i < a; i++) {
+      if (binarySearch(input, input[i] + d)) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  private boolean binarySearch(int[] array, int target) {
+    if (array == null || array.length == 0) {
+      return false;
+    }
+    int left = 0;
+    int right = array.length - 1;
+    while (left <= right) {
+      int mid = left + (right - left) / 2;
+      if (array[mid] == target) {
+        return true;
+      } else if (array[mid] < target) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }
+    return false;
+  }
+
+}
+
+
+
+///test
+
+Main answer = new Main();
+       int size = 6;
+       int[] sviper = {2, 4, 6, 8, 10, 12};
+       int dis = 2;
+       int result = answer.distance(size, sviper, dis);
+       System.out.println("The result is + :" + result);

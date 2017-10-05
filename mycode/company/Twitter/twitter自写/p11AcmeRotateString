@@ -1,0 +1,30 @@
+//Time Complexity O(nlogn), Space O(n);
+public class Solution {
+  public int rotateString(String s) {
+    if (s == null || s.length() == 0) {
+      return 0;
+    }
+    String[] array = new String[s.length()];
+    String concat = s + s;
+    for (int i = 0; i < s.length(); i++) {
+      array[i] = concat.substring(i, i + s.length()) + i;// + i
+    }
+    Arrays.sort(array);
+    String str = array[0];
+    int start = str.length() - 1;
+    /*
+    for (; start >= 0; start--) {
+      if (Character.isDigit(str.charAt(start))) {
+        break;
+      }
+    }
+    */
+    return Integer.parseInt(str.substring(start));
+  }
+}
+
+///test////
+Main answer = new Main();
+       String[] test = {"5", "3", "0"};
+       int result = answer.rotateString("bac");//bacbac
+       System.out.println("The test result is:" + result);

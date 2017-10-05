@@ -1,0 +1,72 @@
+public class Solution {
+    public boolean twinString1(String s1, String s2) {
+      if (s1.length() != s2.length()) {
+        return false;
+      }
+      Map<Character, Integer> mapOdd1 = new HashMap<>();
+      Map<Character, Integer> mapOdd2 = new HashMap<>();
+      Map<Character, Integer> mapEven1 = new HashMap<>();
+      Map<Character, Integer> mapEven2 = new HashMap<>();
+
+      for (int i = 0; i < s1.length(); i++) {
+        if (i % 2 == 0) {
+          mapEven1.put(s1.charAt(i), mapEven1.getOrDefault(s1.charAt(i) , 0) + 1);
+          mapEven2.put(s2.charAt(i), mapEven2.getOrDefault(s2.charAt(i) , 0) + 1);
+        } else {
+          mapOdd1.put(s1.charAt(i), mapOdd1.getOrDefault(s1.charAt(i) , 0) + 1);
+          mapOdd2.put(s2.charAt(i), mapOdd2.getOrDefault(s2.charAt(i) , 0) + 1);
+        }
+      }
+      return mapOdd1.equals(mapOdd2) && mapEven1.equals(mapEven2);
+    }
+
+}
+
+
+///Solution 2
+//Time Complexity O(n) Space Complexity O(n)
+public class Solution {
+    public boolean twinString1(String s1, String s2) {
+      if (s1.length() != s2.length()) {
+        return false;
+      }
+      StringBuilder sb1e = new StringBuilder();
+      StringBuilder sb1o = new StringBuilder();
+      StringBuilder sb2e = new StringBuilder();
+      StringBuilder sb2o = new StringBuilder();
+      for (int i = 0; i < s1.length(); i++) {
+        if (i % 2 == 0) {
+          sb1e.append(s1.charAt(i));
+          sb2e.append(s2.charAt(i));
+        } else {
+          sb1o.append(s1.charAt(i));
+          sb2o.append(s2.charAt(i));
+        }
+      }
+      String evenS1 = sb1e.toString();
+      String oddS1 = sb1o.toString();
+      String evenS2 = sb2e.toString();
+      String oddS2 = sb2o.toString();
+      return isAnagram(evenS1, evenS2) && isAnagram(oddS1, oddS2);
+    }
+
+    private boolean isAnagram(String s, String t) {
+      int[] alphabet = new int[26];
+      for (int i = 0; i < s.length(); i++) {
+        alphabet[s.charAt(i) - 'a']++;
+      }
+      for (int i = 0; i < t.length(); i++) {
+        alphabet[t.charAt(i) - 'a']--;
+      }
+      for (int i : alphabet) {
+        if (i != 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+}
+//test case//
+boolean result = answer.twinString1("abcd","cdab");
+System.out.println("The main value is :" + result);

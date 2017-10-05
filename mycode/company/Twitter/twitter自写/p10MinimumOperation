@@ -1,0 +1,33 @@
+public class Solution {
+  public int[] operations(String[] nvalues) {
+    //corner case.
+    if (nvalues == null || nvalues.length == 0) {
+      return new int[0];
+    }
+    int[] result = new int[nvalues.length];
+    for (int i = 0; i < nvalues.length; i++) {
+      result[i] = operationHelper(Long.parseLong(nvalues[i]));
+      //similar function:
+      //Integer.parseInt, Double.parseDouble;
+    }
+    return result;
+  }
+  //private static int operationHelper(long number)
+  private int operationHelper(long number) {
+    if (number == 0) {
+      return 0;
+    }
+    int result = 0;
+    while (number > 0) {
+      if (number % 2 == 0) {
+        number /= 2;
+        result++;
+      } else {
+        number--;
+        result++;
+      }
+    }
+    return result;
+  }
+
+}

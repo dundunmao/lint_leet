@@ -1,0 +1,1 @@
+# cupcake 问题，n dollers 能买单价为c的cupcake，bingqie用m个wrapper可以再换一个cupcake,问最终能吃几个cupcake.

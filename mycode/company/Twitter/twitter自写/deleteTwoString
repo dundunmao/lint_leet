@@ -1,0 +1,40 @@
+public class Solution {
+  public static int remove(String s, String t) {
+    String delete = "";
+    char[] array = s.toCharArray();
+    int result = 0;
+    int result = replaceShorter(array, s, delete, result);
+    return result;
+  }
+
+  private static int replaceShorter(char[] input, String s, String t, int count) {
+    int slow = 0;
+    int fast = 0;
+    while (fast < input.length) {
+      if (fast <= input.length - s.length() && equalSubstring(input, fast, s)) {
+        //copySubstring(input, slow, t);
+        //slow += t.length();
+        fast += s.length();
+        count++;
+        while(fast < input.length) {
+          input[slow++] = input[fast++];
+        }
+        char[] arrayNew = input.substring(0, slow + 1);
+        count = replaceShorter(arrayNew, String s, String t, count);
+      } else {
+        input[slow++] = input[fast++];
+      }
+    }
+    return count;
+  }
+
+  private static boolean equalSubstring(char[] input, int fromIndex, s) {
+    for (int i = 0; i < s.length(); i++) {
+      if (input[fromIndex + i] != s.charAt(i)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+}

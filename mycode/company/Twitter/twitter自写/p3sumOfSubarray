@@ -1,0 +1,23 @@
+//Time Complexity O(n^2);
+public class Solution {
+  public int sumOfSubarrays(int[] array) {
+    if (array == null || array.length == 0) {
+      return 0;
+    }
+    int sum = 0;
+    for (int i = 0; i < array.length; i++ ) {
+      int subsum = 0;
+      for (int j = i; j < array.length; j++) {
+        subsum += array[j];
+        sum += subsum;
+      }
+    }
+    return sum;
+  }
+}
+
+
+//better solution
+http://www.geeksforgeeks.org/sum-of-all-subarrays/
+
+//test///////

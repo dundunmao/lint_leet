@@ -1,0 +1,26 @@
+//return isosceles--1 equiside--2 other--3,invalid -1
+Time Complexity O(1)
+public class Solution {
+  public int isEquilateral(String side1, String side2, String side3) {
+    int s1 = Integer.parseInt(side1);
+    int s2 = Integer.parseInt(side2);
+    int s3 = Integer.parseInt(side3);
+    if (s1 <= 0 || s2 <= 0 || s3 <= 0) {
+      return -1;
+    }
+    if (s1 == s2 && s2 == s3) {
+      return 2;
+    }
+    if(s1 + s2 > s3 || s1 + s3 > s2 || s2 + s3 > s1) {
+      if(s1 == s2 || s2 == s3 || s1 == s3) {
+        return 1;
+      }
+      return 3;
+    }
+    return -1;
+  }
+}
+
+//test///
+int result = answer.isEquilateral("3","3","2");
+System.out.println("The result is : +" + result);

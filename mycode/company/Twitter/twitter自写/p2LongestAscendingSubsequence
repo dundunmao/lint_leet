@@ -1,0 +1,53 @@
+//Dynamic programming O(n^2)
+public class Solution {
+  public int longest(int[] array) {
+    if (array == null || array.length == 0) {
+      return 0;
+    }
+    int[] longest = new int[array.length];
+    int result = 1;
+    for (int i = 0; i < array.length; i++) {
+      longest[i] = 1;
+      for (int j = 0; j < i; j++ ) {
+        if (array[j] < array[i]) {
+          longest[i] = Math.max(longest[j] + 1, longest[i]);
+        }
+      }
+      result = Math.max(longest[i], result);
+    }
+    return result;
+  }
+ }
+
+// Method 2 // not understand// Time ComplexityO(n*logn)
+public class Solution {
+  public int longest(int[] array) {
+    if (array == null || array.length == 0) {
+      return 0;
+    }
+    int[] tb1 = new int[array.length + 1];
+    int result = 1;
+    tb1[1] = array[0];
+    for (int i = 1; i < array.length; i++) {
+      int index = find(tb1, 1, result, array[i]);
+      if (index == result) {
+        tb1[++result] = array[i];
+      } else {
+        tb1[index + 1] = array[i];
+      }
+    }
+    return result;
+  }
+
+  private int find(int[] tb1, int left, int right, int target) {
+    while (left <= right) {
+      int mid = left + (right - left) / 2;
+      if (tb1[mid] >= target) {
+        right = mid - 1;
+      } else {
+        left = mid + 1;
+      }
+    }
+    return right;
+  }
+}

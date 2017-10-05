@@ -1,0 +1,35 @@
+//Time Complexity O(n)
+public class Solution {
+  public String game(int[] andrea, int[] maria, String s) {
+         int m = andrea.length;
+         int n = maria.length;
+         int i = 0;
+         if (m != n) {
+             return "Error,Size!";
+         }
+         if (s == "Odd") {
+             i = 1;
+         }
+         int scoreA = 0;
+         int scoreM = 0;
+         for (; i < n; i += 2) {
+             scoreA += andrea[i] - maria[i];
+             scoreM += maria[i] - andrea[i];
+         }
+         if (scoreA > 0) {
+             return "Andrea";
+         } else if (scoreA < 0) {
+             return "Maria";
+         } else {
+             return "Tie";
+         }
+     }
+}
+
+//test
+Main answer = new Main();
+       int[] steve = {1, 2, 3};
+       int[] sviper = {2, 1, 3};
+       String game = "Odd";
+       String print = answer.game(steve, sviper, game);
+       System.out.println("The Winner is :" + print);
