@@ -32,6 +32,7 @@ class Solution:
         local_max = 0
         global_max = float('-inf')
         for i in range(len(nums)):
+            # local_max是包括 current i 的
             local_max = max(local_max+nums[i], nums[i])  #因为local_max+nums[i]<nums[i],所以local_max<0.累计的这一段小于0,就不能要他了.
             global_max = max(global_max, local_max)
         return global_max

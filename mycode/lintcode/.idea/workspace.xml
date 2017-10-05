@@ -13,12 +13,13 @@
     <SUITE FILE_PATH="coverage/lintcode$386__Longest_Substring_with_At_Most_K_Distinct_Characters.coverage" NAME="386  Longest Substring with At Most K Distinct Characters Coverage Results" MODIFIED="1505712709771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advance/4two_pointer" />
     <SUITE FILE_PATH="coverage/lintcode$41__Maximum_Subarray.coverage" NAME="41  Maximum Subarray Coverage Results" MODIFIED="1498758115028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$167_Add_Two_Numbers.coverage" NAME="167 Add Two Numbers Coverage Results" MODIFIED="1500272197070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked list" />
+    <SUITE FILE_PATH="coverage/lintcode$382_triangle_count.coverage" NAME="382 triangle count Coverage Results" MODIFIED="1506197802286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advance/4two_pointer" />
     <SUITE FILE_PATH="coverage/lintcode$58_4sum.coverage" NAME="58 4sum Coverage Results" MODIFIED="1505977347366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array/two sum" />
     <SUITE FILE_PATH="coverage/lintcode$393_Best_Time_to_Buy_and_Sell_Stock_IV.coverage" NAME="393 Best Time to Buy and Sell Stock IV Coverage Results" MODIFIED="1498967123542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$38_Search_a_2D_Matrix_II.coverage" NAME="38 Search a 2D Matrix II Coverage Results" MODIFIED="1505376121251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search" />
     <SUITE FILE_PATH="coverage/lintcode$88__Lowest_Common_Ancestor.coverage" NAME="88  Lowest Common Ancestor Coverage Results" MODIFIED="1502693625644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
     <SUITE FILE_PATH="coverage/lintcode$97__Maximum_Depth_of_Binary_Tree.coverage" NAME="97  Maximum Depth of Binary Tree Coverage Results" MODIFIED="1502949243224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
-    <SUITE FILE_PATH="coverage/lintcode$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1505693244511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lintcode$Unittests_in_test_py.coverage" NAME="test123.py Coverage Results" MODIFIED="1506492628088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lintcode$31_partition_array.coverage" NAME="31 partition array Coverage Results" MODIFIED="1499284765594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$223_Palindrome_Linked_List.coverage" NAME="223 Palindrome Linked List Coverage Results" MODIFIED="1505612655762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked list" />
     <SUITE FILE_PATH="coverage/lintcode$480_binary_tree_paths.coverage" NAME="480 binary-tree-paths Coverage Results" MODIFIED="1503685041137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
@@ -29,21 +30,26 @@
     <SUITE FILE_PATH="coverage/lintcode$134_LRU.coverage" NAME="134 LRU Coverage Results" MODIFIED="1501470010504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Structure" />
     <SUITE FILE_PATH="coverage/lintcode$161_rotate_image.coverage" NAME="161 rotate image Coverage Results" MODIFIED="1499449624724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$376_binary_tree_path_sum.coverage" NAME="376 binary tree path sum Coverage Results" MODIFIED="1502826083957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
+    <SUITE FILE_PATH="coverage/lintcode$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1507173816276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lintcode$136_palindrome_partitioning.coverage" NAME="136 palindrome partitioning Coverage Results" MODIFIED="1503183775355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search" />
     <SUITE FILE_PATH="coverage/lintcode$595_binary_tree_longest_consecutive_sequence.coverage" NAME="595 binary-tree-longest-consecutive-sequence Coverage Results" MODIFIED="1503607725066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
     <SUITE FILE_PATH="coverage/lintcode$4_Ugly_Number_II.coverage" NAME="4 Ugly Number II Coverage Results" MODIFIED="1501613312379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Structure" />
+    <SUITE FILE_PATH="coverage/lintcode$423_valid_parentheses.coverage" NAME="423 valid-parentheses Coverage Results" MODIFIED="1506308782810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array/two sum" />
     <SUITE FILE_PATH="coverage/lintcode$non_578_lowest_common_ancestor_iii.coverage" NAME="non 578 lowest-common-ancestor-iii Coverage Results" MODIFIED="1502737234381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
-    <SUITE FILE_PATH="coverage/lintcode$191_max_product_sub_array.coverage" NAME="191 max product sub-array Coverage Results" MODIFIED="1498864821282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$57_3sum.coverage" NAME="57 3sum Coverage Results" MODIFIED="1505857685002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array/two sum" />
+    <SUITE FILE_PATH="coverage/lintcode$191_max_product_sub_array.coverage" NAME="191 max product sub-array Coverage Results" MODIFIED="1506492804323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$109_triangle.coverage" NAME="109 triangle Coverage Results" MODIFIED="1502997657856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DP" />
     <SUITE FILE_PATH="coverage/lintcode$170_Rotate_List.coverage" NAME="170 Rotate List Coverage Results" MODIFIED="1500251033684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked list" />
     <SUITE FILE_PATH="coverage/lintcode$67__Binary_Tree_Inorder_Traversal.coverage" NAME="67  Binary Tree Inorder Traversal Coverage Results" MODIFIED="1501804417504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
+    <SUITE FILE_PATH="coverage/lintcode$test123_py.coverage" NAME="test123.py Coverage Results" MODIFIED="1506493015570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lintcode$138_Subarray_Sum.coverage" NAME="138 Subarray Sum Coverage Results" MODIFIED="1499030610190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$108_palimdrome_partition_ii.coverage" NAME="108 palimdrome partition ii Coverage Results" MODIFIED="1503195558916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DP" />
     <SUITE FILE_PATH="coverage/lintcode$non_595_binary_tree_longest_consecutive_sequence.coverage" NAME="non 595 binary-tree-longest-consecutive-sequence Coverage Results" MODIFIED="1502863305550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
     <SUITE FILE_PATH="coverage/lintcode$100_1_remove_duplicates_from_unsorted_array.coverage" NAME="100.1 remove duplicates from unsorted array Coverage Results" MODIFIED="1506062820593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$488_happy_number.coverage" NAME="488 happy-number Coverage Results" MODIFIED="1499638238382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
+    <SUITE FILE_PATH="coverage/lintcode$76_longest_increasing_subsequence.coverage" NAME="76 longest-increasing-subsequence Coverage Results" MODIFIED="1506211104754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DP" />
     <SUITE FILE_PATH="coverage/lintcode$155__Minimum_Depth_of_Binary_Tree.coverage" NAME="155  Minimum Depth of Binary Tree Coverage Results" MODIFIED="1501872328172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
+    <SUITE FILE_PATH="coverage/lintcode$123test.coverage" NAME="123test Coverage Results" MODIFIED="1506493054991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lintcode$130_heapify.coverage" NAME="130 heapify Coverage Results" MODIFIED="1501715909554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Structure" />
     <SUITE FILE_PATH="coverage/lintcode$33_n_queens.coverage" NAME="33 n queens Coverage Results" MODIFIED="1503424188415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search" />
     <SUITE FILE_PATH="coverage/lintcode$246_binary_tree_path_sum_ii.coverage" NAME="246 binary-tree-path-sum-ii Coverage Results" MODIFIED="1503700687856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
@@ -62,8 +68,11 @@
     <SUITE FILE_PATH="coverage/lintcode$68_Binary_Tree_Postorder_Traversal.coverage" NAME="68 Binary Tree Postorder Traversal Coverage Results" MODIFIED="1503632662009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
     <SUITE FILE_PATH="coverage/lintcode$100_remove_duplicates_from_sorted_array.coverage" NAME="100 remove-duplicates-from-sorted-array Coverage Results" MODIFIED="1499452987244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/lintcode$196_missing_number.coverage" NAME="196 missing number Coverage Results" MODIFIED="1501693913210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
+    <SUITE FILE_PATH="coverage/lintcode$non_611_knight_shortest_path.coverage" NAME="non 611 knight-shortest-path Coverage Results" MODIFIED="1506640878885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search/breath first search" />
+    <SUITE FILE_PATH="coverage/lintcode$427_Generate_Parentheses.coverage" NAME="427 Generate Parentheses Coverage Results" MODIFIED="1506311545575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer" />
     <SUITE FILE_PATH="coverage/lintcode$510_Maximal_Rectangle.coverage" NAME="510 Maximal Rectangle Coverage Results" MODIFIED="1501451292854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Structure" />
     <SUITE FILE_PATH="coverage/lintcode$17__Letter_Combinations_of_a_Phone_Number.coverage" NAME="17. Letter Combinations of a Phone Number Coverage Results" MODIFIED="1504053552532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search/deep first search" />
+    <SUITE FILE_PATH="coverage/lintcode$17_Subsets.coverage" NAME="17 Subsets Coverage Results" MODIFIED="1506819329222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search" />
     <SUITE FILE_PATH="coverage/lintcode$380_Intersection_of_Two_Linked_Lists.coverage" NAME="380 Intersection of Two Linked Lists Coverage Results" MODIFIED="1500320338702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked list" />
     <SUITE FILE_PATH="coverage/lintcode$non_414_divide_two_integers.coverage" NAME="non-414 divide-two-integers Coverage Results" MODIFIED="1503008988870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search" />
     <SUITE FILE_PATH="coverage/lintcode$120_word_ladder.coverage" NAME="120 word ladder Coverage Results" MODIFIED="1503544346614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph and search" />
@@ -87,101 +96,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="57 3sum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/two sum/57 3sum.py">
+      <file leaf-file-name="191 max product sub-array.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/191 max product sub-array.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="-121">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="58 4sum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/two sum/58 4sum.py">
+      <file leaf-file-name="Subsets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Subsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="359">
+              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="604 window-sum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advance/4two_pointer/604 window-sum.py">
+      <file leaf-file-name="17 Subsets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph and search/17 Subsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="248">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="38" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="521 remove-duplicate-numbers-in-array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/two sum/521 remove-duplicate-numbers-in-array.py">
+      <file leaf-file-name="41  Maximum Subarray.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/41  Maximum Subarray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="291">
+              <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="100.1 remove duplicates from unsorted array.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Array/100.1 remove duplicates from unsorted array.py">
+      <file leaf-file-name="149 Best Time to Buy and Sell Stock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/149 Best Time to Buy and Sell Stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="100.2 remove duplicates from unsorted array ii.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/100.2 remove duplicates from unsorted array ii.py">
+      <file leaf-file-name="138 Subarray Sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/138 Subarray Sum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="128" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reverse.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reverse.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="100 remove-duplicates-from-sorted-array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/100 remove-duplicates-from-sorted-array.py">
+      <file leaf-file-name="611 knight-shortest-path.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph and search/breath first search/611 knight-shortest-path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="21" lean-forward="true" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="101 remove-duplicates-from-sorted-array-ii.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/101 remove-duplicates-from-sorted-array-ii.py">
+      <file leaf-file-name="427 Generate Parentheses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/427 Generate Parentheses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="825">
+              <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="406 minimum-size-subarray-sum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advance/4two_pointer/406 minimum-size-subarray-sum.py">
+      <file leaf-file-name="423 valid-parentheses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/two sum/423 valid-parentheses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="189 First Missing Positive.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/189 First Missing Positive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="720">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="51" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -201,10 +210,16 @@
       <find>4</find>
       <find>406</find>
       <find>191</find>
-      <find>Maximum Product Subarray</find>
       <find>1</find>
       <find>self.cur</find>
       <find>list</find>
+      <find>Maximum Product Subarray</find>
+      <find>Product Subarray</find>
+      <find>Product</find>
+      <find>s</find>
+      <find>subs</find>
+      <find>subset</find>
+      <find>subsets</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -213,19 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Binary Search/460 k-closest-numbers-in-sorted-array.py" />
-        <option value="$PROJECT_DIR$/DP/117 jump game ii.py" />
-        <option value="$PROJECT_DIR$/graph and search/136 palindrome partitioning.py" />
-        <option value="$PROJECT_DIR$/DP/108 palimdrome partition ii.py" />
-        <option value="$PROJECT_DIR$/DP/29 interleaving-string.py" />
-        <option value="$PROJECT_DIR$/graph and search/137 clone graph.py" />
-        <option value="$PROJECT_DIR$/graph and search/17 Subsets.py" />
-        <option value="$PROJECT_DIR$/graph and search/16 Permutations ii.py" />
-        <option value="$PROJECT_DIR$/advance/2:union_find&amp;trie&amp;sweep_line/433 number-of-islands.py" />
-        <option value="$PROJECT_DIR$/graph and search/breath first search/600 Smallest Rectangle Enclosing Black Pixels.py" />
-        <option value="$PROJECT_DIR$/graph and search/breath first search/573 Build Post Office II.py" />
-        <option value="$PROJECT_DIR$/graph and search/33 n queens.py" />
-        <option value="$PROJECT_DIR$/Binary Search/non-414 divide-two-integers.py" />
         <option value="$PROJECT_DIR$/graph and search/135 combination-sum.py" />
         <option value="$PROJECT_DIR$/graph and search/120 word ladder.py" />
         <option value="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/595 binary-tree-longest-consecutive-sequence.py" />
@@ -249,7 +251,6 @@
         <option value="$PROJECT_DIR$/Array/two sum/56 two sum.py" />
         <option value="$PROJECT_DIR$/Array/two sum/non 587 two-sum-unique-pairs.py" />
         <option value="$PROJECT_DIR$/Array/two sum/587 two-sum-unique-pairs.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/advance/4two_pointer/384 Longest Substring Without Repeating Characters.py" />
         <option value="$PROJECT_DIR$/advance/4two_pointer/386  Longest Substring with At Most K Distinct Characters.py" />
         <option value="$PROJECT_DIR$/linked list/223 Palindrome Linked List.py" />
@@ -264,6 +265,20 @@
         <option value="$PROJECT_DIR$/Array/two sum/521 remove-duplicate-numbers-in-array.py" />
         <option value="$PROJECT_DIR$/Array/100 remove-duplicates-from-sorted-array.py" />
         <option value="$PROJECT_DIR$/Array/100.1 remove duplicates from unsorted array.py" />
+        <option value="$PROJECT_DIR$/advance/4two_pointer/382 triangle count.py" />
+        <option value="$PROJECT_DIR$/advance/4two_pointer/5 kth-largest-element.py" />
+        <option value="$PROJECT_DIR$/DP/76 longest-increasing-subsequence.py" />
+        <option value="$PROJECT_DIR$/Array/two sum/423 valid-parentheses.py" />
+        <option value="$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py" />
+        <option value="$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/427 Generate Parentheses.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/test123.py" />
+        <option value="$PROJECT_DIR$/123test.py" />
+        <option value="$PROJECT_DIR$/graph and search/breath first search/non 611 knight-shortest-path.py" />
+        <option value="$PROJECT_DIR$/Array/191 max product sub-array.py" />
+        <option value="$PROJECT_DIR$/graph and search/17 Subsets.py" />
+        <option value="$PROJECT_DIR$/Array/41  Maximum Subarray.py" />
+        <option value="$PROJECT_DIR$/reverse.py" />
       </list>
     </option>
   </component>
@@ -274,10 +289,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="415" />
-    <option name="y" value="26" />
-    <option name="width" value="1153" />
-    <option name="height" value="713" />
+    <option name="x" value="16" />
+    <option name="y" value="23" />
+    <option name="width" value="1177" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -294,7 +309,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,25 +332,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data Structure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Structure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hash&amp;heap" />
+              <option name="myItemId" value="Binary Search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,49 +360,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="two sum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="advance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lintcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="advance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4two_pointer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,97 +391,95 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.100.1 remove duplicates from unsorted array">
-    <configuration default="false" name="386  Longest Substring with At Most K Distinct Characters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.reverse">
+    <configuration default="false" name="test123.py" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lintcode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/123test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="123test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advance/4two_pointer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lintcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advance/4two_pointer/386  Longest Substring with At Most K Distinct Characters.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/123test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="189 First Missing Positive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="non 611 knight-shortest-path" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph and search/breath first search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lintcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/189 First Missing Positive.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph and search/breath first search/611 knight-shortest-path.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="57 3sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="17 Subsets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array/two sum" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph and search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lintcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/two sum/57 3sum.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph and search/17 Subsets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="58 4sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="reverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array/two sum" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lintcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/two sum/58 4sum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="100.1 remove duplicates from unsorted array" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lintcode" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/100.1 remove duplicates from unsorted array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reverse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -675,19 +634,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.386  Longest Substring with At Most K Distinct Characters" />
-      <item index="1" class="java.lang.String" itemvalue="Python.189 First Missing Positive" />
-      <item index="2" class="java.lang.String" itemvalue="Python.57 3sum" />
-      <item index="3" class="java.lang.String" itemvalue="Python.58 4sum" />
-      <item index="4" class="java.lang.String" itemvalue="Python.100.1 remove duplicates from unsorted array" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.test123.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.123test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.non 611 knight-shortest-path" />
+      <item index="3" class="java.lang.String" itemvalue="Python.17 Subsets" />
+      <item index="4" class="java.lang.String" itemvalue="Python.reverse" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.100.1 remove duplicates from unsorted array" />
-        <item index="1" class="java.lang.String" itemvalue="Python.58 4sum" />
-        <item index="2" class="java.lang.String" itemvalue="Python.57 3sum" />
-        <item index="3" class="java.lang.String" itemvalue="Python.189 First Missing Positive" />
-        <item index="4" class="java.lang.String" itemvalue="Python.386  Longest Substring with At Most K Distinct Characters" />
+        <item index="0" class="java.lang.String" itemvalue="Python.reverse" />
+        <item index="1" class="java.lang.String" itemvalue="Python.17 Subsets" />
+        <item index="2" class="java.lang.String" itemvalue="Python.non 611 knight-shortest-path" />
+        <item index="3" class="java.lang.String" itemvalue="Python.123test" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.test123.py" />
       </list>
     </recent_temporary>
   </component>
@@ -708,35 +667,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 15h 03m 48s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 10m 59s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 15h 04m 35s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 11m 14s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 15h 06m 57s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 12m 27s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 15h 07m 00s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 15m 40s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 16h 56m 55s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 15m 49s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 16h 56m 59s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 16m 27s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 16h 59m 15s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test123_py - 2017.09.26 at 23h 16m 56s.xml">
+      <configuration name="test123.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 17h 00m 48s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test_py - 2017.09.26 at 23h 07m 26s.xml">
+      <configuration name="test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 17h 04m 31s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test_py - 2017.09.26 at 23h 09m 30s.xml">
+      <configuration name="test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2017.09.17 at 17h 07m 20s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="test_py - 2017.09.26 at 23h 09m 45s.xml">
+      <configuration name="test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -749,19 +708,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="415" y="26" width="1153" height="713" extended-state="0" />
+    <frame x="16" y="23" width="1177" height="709" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22952296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34035656" sideWeight="0.47951177" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3128039" sideWeight="0.4701422" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11993517" sideWeight="0.49694857" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20772947" sideWeight="0.4701422" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23510467" sideWeight="0.49694857" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19295155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22690438" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45705023" sideWeight="0.5204882" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5204882" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -769,7 +730,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22690438" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -788,13 +748,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Array/41  Maximum Subarray.py</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Array/191 max product sub-array.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Array/393 Best Time to Buy and Sell Stock IV.py</url>
@@ -1032,16 +987,6 @@
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/68 Binary Tree Postorder Traversal.py</url>
           <line>74</line>
           <option name="timeStamp" value="102" />
@@ -1082,31 +1027,6 @@
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/advance/4two_pointer/384 Longest Substring Without Repeating Characters.py</url>
           <line>35</line>
           <option name="timeStamp" value="133" />
@@ -1131,6 +1051,36 @@
           <line>46</line>
           <option name="timeStamp" value="142" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/advance/4two_pointer/382 triangle count.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DP/76 longest-increasing-subsequence.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/427 Generate Parentheses.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/427 Generate Parentheses.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/graph and search/breath first search/611 knight-shortest-path.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/graph and search/breath first search/611 knight-shortest-path.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1142,133 +1092,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="143" />
+      <option name="time" value="184" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Binary Search/183 wood cut.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/61 Search for a Range.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/75 Find Peak Element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/459 closest-number-in-sorted-array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/460 k-closest-numbers-in-sorted-array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/462 total-occurrence-of-target.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/non 585 maximum-number-in-mountain-sequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/non 600 smallest-rectangle-enclosing-black-pixels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/414 divide-two-integers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/457 classical-binary-search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/8 rotate-string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linked list/35 Reverse Linked List.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linked list/36. Reverse Linked List II.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linked list/98 Sort List.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/458 last-position-of-target.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/28 Search a 2D Matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="128" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Search/38 Search a 2D Matrix II.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="22" lean-forward="false" selection-start-line="105" selection-start-column="22" selection-end-line="106" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Binary Search/447 Search in a Big Sorted Array.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -1367,21 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/advance/4two_pointer/386  Longest Substring with At Most K Distinct Characters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1402,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
           <caret line="73" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,14 +1274,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/two sum/58 4sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="945">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1481,8 +1288,7 @@
     <entry file="file://$PROJECT_DIR$/advance/4two_pointer/604 window-sum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1490,7 +1296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,7 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1513,15 +1317,150 @@
     <entry file="file://$PROJECT_DIR$/Array/100 remove-duplicates-from-sorted-array.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
-          <caret line="74" column="21" lean-forward="true" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advance/4two_pointer/382 triangle count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advance/4two_pointer/5 kth-largest-element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DP/76 longest-increasing-subsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/73 Construct Binary Tree from Preorder and Inorder Traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advance/4two_pointer/399 Nuts &amp; Bolts Problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="55" column="22" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/100.1 remove duplicates from unsorted array.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="46" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree &amp; Divide Conquer/427 Generate Parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py" />
+    <entry file="file://$PROJECT_DIR$/Array/two sum/423 valid-parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/123test.py" />
+    <entry file="file://$PROJECT_DIR$/graph and search/breath first search/611 knight-shortest-path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/191 max product sub-array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph and search/17 Subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/41  Maximum Subarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/149 Best Time to Buy and Sell Stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/138 Subarray Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="128" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="46" />
           <folding />
         </state>
       </provider>

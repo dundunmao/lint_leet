@@ -21,27 +21,22 @@
 # ]
 class Solution:
 
-    def subsets(self, S):
-        result = []
-        if S is None or len(S) == 0:
-            return []
-        list = []
-        S.sort()
-        result_1 = []
-        result = []
-        self.helper(result, list, S, 0,result_1)
-        res = result_1+[[]]
-        return result,res,result.sort() == res.sort()
-#以pos开头的S里的数的subsets
-    def helper(self, result, list, S, pos,result_1):
-        list_get = [x for x in list]
-        result.append(list_get)
-        for i in range(pos, len(S)):
-            list.append(S[i])
-            list_g = [x for x in list]
-            result_1.append(list_g)   #可以放在这里append
-            self.helper(result, list, S, i + 1,result_1)
-            list.pop()
+    def sum_subarray(self, arr):
+        res = []
+        array = []
+        pos = 0
+        self.helper(arr, res, array, pos)
+        ans = 0
+        for ele in res:
+            ans += sum(ele)
+        return ans
+
+    def helper(self, arr, res, array, pos):
+        for i in range(pos, len(arr)):
+            array.append(arr[i])
+            res.append(array[:])
+            self.helper(arr, res, array, i + 1)
+            array.pop()
 
 class Solution1(object):
     def subsets(self, nums):
@@ -54,25 +49,8 @@ class Solution1(object):
             result += [item + [num] for item in result]
         return result
 
-class Solution(object):
-    def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        if nums is None or len(nums) == 0:
-            return []
-        res = [[]]
-        path = []
-        self.helper(nums, res, path)
-        return res
-    def helper(self, nums, res, path):
-        for i in range(len(nums)):
-            path.append(nums[i])
-            res.append(path[:])
-            self.helper(nums[i+1:], res, path)
-            path.pop()
+
 if __name__ == '__main__':
-    S = [1,2,3,4]
+    S = [1,2,3]
     s = Solution()
     print s.subsets(S)

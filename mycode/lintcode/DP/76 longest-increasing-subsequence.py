@@ -107,8 +107,26 @@ def obtain_length_LISubSuq(ori_s):
    return nn, nss
 
 
+
+class Solution5(object):
+    def longestIncreasingSubsequence(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if nums is None or len(nums) == 0:
+            return 0
+        n = len(nums)
+        f = [1 for i in range(len(nums))]
+        # f[0] = 1
+        for i in range(1,len(nums)):
+            for j in range(i, -1, -1):
+                # print j
+                if nums[j] < nums[i]:
+                    f[i] = f[j] + 1
+        return max(f)
 if __name__ == "__main__":
-    nums = [10,1,11,2,12,3,11]
+    nums = [1,3,6,7,9,4,10,5,6]
     print obtain_length_LISubSuq(nums)
-    s = Solution()
+    s = Solution5()
     print s.longestIncreasingSubsequence(nums)

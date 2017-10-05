@@ -8,14 +8,13 @@ class Solution:
     def kthLargestElement(self, A,k):
         if A is None or len(A)==0:
             return 0
-        q = []
-        for i in range(len(A)):
-            A[i] = -A[i]
-        heapq.heapify(A)
-        node = 0
+        nums = [-ele for ele in A]
+        heapq.heapify(nums)
         for i in range(k):
-            node = heapq.heappop(A)
-        return -node
+            ans = heapq.heappop(nums)
+        return -ans
+
+
 # 双指针法
 class Solution1:
     # @param k & A a integer and an array
@@ -25,12 +24,12 @@ class Solution1:
             return 0
         if k <= 0:
             return 0
-        return self.helper(A, 0, len(A) - 1, len(A) - k + 1)
+        return self.helper(A, 0, len(A) - 1, len(A) - k + 1)  #QUICK SORT
 
     def helper(self, nums, l, r, k):
         if l == r:
             return A[l]
-        position = self.partition(A, l, r)
+        position = self.partition(A, l, r)   #用第一个数把数组排序。
         if position + 1 == k:
             return A[position]
         elif position + 1 < k:

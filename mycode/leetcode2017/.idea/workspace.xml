@@ -19,10 +19,12 @@
     <SUITE FILE_PATH="coverage/leetcode2017$345__Reverse_Vowels_of_a_String.coverage" NAME="345. Reverse Vowels of a String Coverage Results" MODIFIED="1501103118566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$189_rotate_array.coverage" NAME="189 rotate array Coverage Results" MODIFIED="1499112380084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2017$189_rotate_array.coverage" NAME="189 rotate array Coverage Results" MODIFIED="1501211822017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
+    <SUITE FILE_PATH="coverage/leetcode2017$433__Minimum_Genetic_Mutation.coverage" NAME="433. Minimum Genetic Mutation Coverage Results" MODIFIED="1506885751557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BFS" />
     <SUITE FILE_PATH="coverage/leetcode2017$459__Repeated_Substring_Pattern.coverage" NAME="459. Repeated Substring Pattern Coverage Results" MODIFIED="1501039757621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$606__Construct_String_from_Binary_Tree.coverage" NAME="606. Construct String from Binary Tree Coverage Results" MODIFIED="1501098320180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$624_Maximum_Distance_in_Arrays.coverage" NAME="624 Maximum Distance in Arrays Coverage Results" MODIFIED="1499232507282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
-    <SUITE FILE_PATH="coverage/leetcode2017$532__K_diff_Pairs_in_an_Array.coverage" NAME="532. K-diff Pairs in an Array Coverage Results" MODIFIED="1506032138446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
+    <SUITE FILE_PATH="coverage/leetcode2017$605__Can_Place_Flowers.coverage" NAME="605. Can Place Flowers Coverage Results" MODIFIED="1506740525394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DP" />
+    <SUITE FILE_PATH="coverage/leetcode2017$532__K_diff_Pairs_in_an_Array.coverage" NAME="532. K-diff Pairs in an Array Coverage Results" MODIFIED="1506108614881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/leetcode2017$611__Valid_Triangle_Number.coverage" NAME="611. Valid Triangle Number Coverage Results" MODIFIED="1502661000567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_hard" />
     <SUITE FILE_PATH="coverage/leetcode2017$500__Keyboard_Row.coverage" NAME="500. Keyboard Row Coverage Results" MODIFIED="1501630725101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$624_Maximum_Distance_in_Arrays_.coverage" NAME="624 Maximum Distance in Arrays  Coverage Results" MODIFIED="1499733464212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
@@ -32,6 +34,7 @@
     <SUITE FILE_PATH="coverage/leetcode2017$575__Distribute_Candies.coverage" NAME="575. Distribute Candies Coverage Results" MODIFIED="1499728189409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$230__Kth_Smallest_Element_in_a_BST.coverage" NAME="230. Kth Smallest Element in a BST Coverage Results" MODIFIED="1503524339157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_mid" />
     <SUITE FILE_PATH="coverage/leetcode2017$38_Count_and_Say.coverage" NAME="38 Count and Say Coverage Results" MODIFIED="1501101529030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
+    <SUITE FILE_PATH="coverage/leetcode2017$76_min_window_substring.coverage" NAME="76 min window substring Coverage Results" MODIFIED="1506132523135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/leetcode2017$628__Maximum_Product_of_Three_Numbers.coverage" NAME="628. Maximum Product of Three Numbers Coverage Results" MODIFIED="1501282825099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$623__Add_One_Row_to_Tree.coverage" NAME="623. Add One Row to Tree Coverage Results" MODIFIED="1502173754572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_mid" />
     <SUITE FILE_PATH="coverage/leetcode2017$632__Smallest_Range.coverage" NAME="632. Smallest Range Coverage Results" MODIFIED="1502091481337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_hard" />
@@ -52,6 +55,7 @@
     <SUITE FILE_PATH="coverage/leetcode2017$157_Read_N_Characters_Given_Read4.coverage" NAME="157 Read N Characters Given Read4 Coverage Results" MODIFIED="1505176703578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
     <SUITE FILE_PATH="coverage/leetcode2017$389__Find_the_Difference.coverage" NAME="389. Find the Difference Coverage Results" MODIFIED="1501623090626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
     <SUITE FILE_PATH="coverage/leetcode$219__Contains_Duplicate_II.coverage" NAME="219. Contains Duplicate II Coverage Results" MODIFIED="1499114050202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2017$301_Remove_Invalid_Parentheses.coverage" NAME="301 Remove Invalid Parentheses Coverage Results" MODIFIED="1506397924132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
     <SUITE FILE_PATH="coverage/leetcode$118__Pascal_s_Triangle.coverage" NAME="118. Pascal's Triangle Coverage Results" MODIFIED="1499061695387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2017$14__Longest_Common_Prefix.coverage" NAME="14. Longest Common Prefix Coverage Results" MODIFIED="1501032964189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string_easy" />
     <SUITE FILE_PATH="coverage/leetcode$532__K_diff_Pairs_in_an_Array.coverage" NAME="532. K-diff Pairs in an Array Coverage Results" MODIFIED="1499234190930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_easy" />
@@ -62,6 +66,7 @@
     <SUITE FILE_PATH="coverage/leetcode$Add_to_List_599__Minimum_Index_Sum_of_Two_Lists.coverage" NAME="Add to List 599. Minimum Index Sum of Two Lists Coverage Results" MODIFIED="1499538748709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_easy" />
     <SUITE FILE_PATH="coverage/leetcode$119__Pascal_s_Triangle_II.coverage" NAME="119. Pascal's Triangle II Coverage Results" MODIFIED="1499062087212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2017$315__Count_of_Smaller_Numbers_After_Self.coverage" NAME="315. Count of Smaller Numbers After Self Coverage Results" MODIFIED="1505508331609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Array" />
+    <SUITE FILE_PATH="coverage/leetcode2017$8__String_to_Integer__atoi_.coverage" NAME="8. String to Integer (atoi) Coverage Results" MODIFIED="1506205560252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/String" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -78,56 +83,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="17. Letter Combinations of a Phone Number.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtracking/17. Letter Combinations of a Phone Number.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="88" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10. Regular Expression Matching.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtracking/10. Regular Expression Matching.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="315. Count of Smaller Numbers After Self.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/315. Count of Smaller Numbers After Self.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="441 Arranging Coins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/441 Arranging Coins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="378. Kth Smallest Element in a Sorted Matrix.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/378. Kth Smallest Element in a Sorted Matrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="16. three sum closest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array/16. three sum closest.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,11 +103,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="532. K-diff Pairs in an Array.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Array/532. K-diff Pairs in an Array.py">
+      <file leaf-file-name="76 min window substring.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/76 min window substring.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="615">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="47" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="8. String to Integer (atoi).py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/String/8. String to Integer (atoi).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20. Valid Parentheses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/String/20. Valid Parentheses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="301 Remove Invalid Parentheses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1830">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="125" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="433. Minimum Genetic Mutation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-59">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="605. Can Place Flowers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/605. Can Place Flowers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="241. Different Ways to Add Parentheses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/241. Different Ways to Add Parentheses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,8 +176,8 @@
       <file leaf-file-name="461. Hamming Distance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bit/461. Hamming Distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -180,14 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/string_easy/551. Student Attendance Record I.py" />
-        <option value="$PROJECT_DIR$/string_easy/521. Longest Uncommon Subsequence I.py" />
-        <option value="$PROJECT_DIR$/string_easy/14. Longest Common Prefix.py" />
-        <option value="$PROJECT_DIR$/string_easy/28 Implement strStr().py" />
-        <option value="$PROJECT_DIR$/string_easy/459. Repeated Substring Pattern.py" />
-        <option value="$PROJECT_DIR$/string_easy/20. Valid Parentheses.py" />
-        <option value="$PROJECT_DIR$/string_easy/434. Number of Segments in a String.py" />
-        <option value="$PROJECT_DIR$/string_easy/606. Construct String from Binary Tree.py" />
         <option value="$PROJECT_DIR$/string_easy/38 Count and Say.py" />
         <option value="$PROJECT_DIR$/string_easy/345. Reverse Vowels of a String.py" />
         <option value="$PROJECT_DIR$/string_easy/58. Length of Last Word.py" />
@@ -231,6 +238,14 @@
         <option value="$PROJECT_DIR$/Array/16. three sum closest.py" />
         <option value="$PROJECT_DIR$/Array/259 three sum smaller.py" />
         <option value="$PROJECT_DIR$/Array/532. K-diff Pairs in an Array.py" />
+        <option value="$PROJECT_DIR$/Array/76 min window substring.py" />
+        <option value="$PROJECT_DIR$/String/8. String to Integer (atoi).py" />
+        <option value="$PROJECT_DIR$/Array/301 remove palindrome.py" />
+        <option value="$PROJECT_DIR$/String/20. Valid Parentheses.py" />
+        <option value="$PROJECT_DIR$/Array/241. Different Ways to Add Parentheses.py" />
+        <option value="$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py" />
+        <option value="$PROJECT_DIR$/DP/605. Can Place Flowers.py" />
+        <option value="$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py" />
       </list>
     </option>
   </component>
@@ -241,10 +256,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="283" />
-    <option name="y" value="79" />
-    <option name="width" value="957" />
-    <option name="height" value="709" />
+    <option name="x" value="10" />
+    <option name="y" value="25" />
+    <option name="width" value="1227" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -283,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="String" />
+              <option name="myItemId" value="DP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,7 +312,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array" />
+              <option name="myItemId" value="BFS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtracking" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,27 +360,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.532. K-diff Pairs in an Array">
-    <configuration default="false" name="328. Odd Even Linked List (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Linked_list" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="leetcode" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linked_list/328. Odd Even Linked List.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="289. Game of Life" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.433. Minimum Genetic Mutation">
+    <configuration default="false" name="76 min window substring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -364,13 +374,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/289. Game of Life.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/76 min window substring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="315. Count of Smaller Numbers After Self" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="8. String to Integer (atoi)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/String" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="leetcode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/String/8. String to Integer (atoi).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="301 Remove Invalid Parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -383,45 +412,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/315. Count of Smaller Numbers After Self.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="259 three sum smaller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="605. Can Place Flowers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DP" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/259 three sum smaller.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DP/605. Can Place Flowers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="532. K-diff Pairs in an Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="433. Minimum Genetic Mutation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BFS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leetcode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/532. K-diff Pairs in an Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -596,19 +625,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.10. Regular Expression Matching" />
-      <item index="1" class="java.lang.String" itemvalue="Python.328. Odd Even Linked List (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.289. Game of Life" />
-      <item index="3" class="java.lang.String" itemvalue="Python.315. Count of Smaller Numbers After Self" />
-      <item index="4" class="java.lang.String" itemvalue="Python.259 three sum smaller" />
-      <item index="5" class="java.lang.String" itemvalue="Python.532. K-diff Pairs in an Array" />
+      <item index="1" class="java.lang.String" itemvalue="Python.76 min window substring" />
+      <item index="2" class="java.lang.String" itemvalue="Python.8. String to Integer (atoi)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.301 Remove Invalid Parentheses" />
+      <item index="4" class="java.lang.String" itemvalue="Python.605. Can Place Flowers" />
+      <item index="5" class="java.lang.String" itemvalue="Python.433. Minimum Genetic Mutation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.532. K-diff Pairs in an Array" />
-        <item index="1" class="java.lang.String" itemvalue="Python.259 three sum smaller" />
-        <item index="2" class="java.lang.String" itemvalue="Python.315. Count of Smaller Numbers After Self" />
-        <item index="3" class="java.lang.String" itemvalue="Python.289. Game of Life" />
-        <item index="4" class="java.lang.String" itemvalue="Python.328. Odd Even Linked List (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.433. Minimum Genetic Mutation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.605. Can Place Flowers" />
+        <item index="2" class="java.lang.String" itemvalue="Python.301 Remove Invalid Parentheses" />
+        <item index="3" class="java.lang.String" itemvalue="Python.8. String to Integer (atoi)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.76 min window substring" />
       </list>
     </recent_temporary>
   </component>
@@ -629,19 +658,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="283" y="79" width="957" height="709" extended-state="1" />
+    <frame x="10" y="25" width="1227" height="712" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30054644" sideWeight="0.4914842" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24894515" sideWeight="0.4914842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1618497" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3016129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31442463" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16693678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31290323" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2568645" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32419354" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22350675" sideWeight="0.50851583" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3452188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32782823" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,6 +995,46 @@
           <line>21</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Array/76 min window substring.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/String/8. String to Integer (atoi).py</url>
+          <line>10</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -973,20 +1043,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="104" />
+      <option name="time" value="119" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/string_easy/344. Reverse String.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/541. Reverse String II.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/606. Construct String from Binary Tree.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/125. Valid Palindrome.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/345. Reverse Vowels of a String.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/434. Number of Segments in a String.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/58. Length of Last Word.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/38 Count and Say.py" />
-    <entry file="file://$PROJECT_DIR$/string_easy/67. Add Binary.py" />
     <entry file="file://$PROJECT_DIR$/array_easy/485. Max Consecutive Ones.py" />
     <entry file="file://$PROJECT_DIR$/array_easy/189 rotate array.py" />
     <entry file="file://$PROJECT_DIR$/array_easy/624 Maximum Distance in Arrays.py" />
@@ -1058,19 +1119,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bit/461. Hamming Distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Array/441 Arranging Coins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,6 +1171,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Array/532. K-diff Pairs in an Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Array/259 three sum smaller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1128,10 +1187,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Array/532. K-diff Pairs in an Array.py">
+    <entry file="file://$PROJECT_DIR$/bit/461. Hamming Distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/76 min window substring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="47" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/String/8. String to Integer (atoi).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/String/125. Valid Palindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/String/20. Valid Parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DP/605. Can Place Flowers.py" />
+    <entry file="file://$PROJECT_DIR$/Array/241. Different Ways to Add Parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/605. Can Place Flowers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/301 Remove Invalid Parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="125" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS/433. Minimum Genetic Mutation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding />
         </state>
       </provider>
