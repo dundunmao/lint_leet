@@ -8,6 +8,24 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2].
+from collections import Counter
+class Solution(object):
+    def intersection(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        # corner case
+        if nums1 is None or nums2 is None:
+            return []
+        # main part
+        hash = Counter(nums1)
+        res = []
+        for ele in nums2:
+            if ele in hash:
+                res.append(ele)
+        return list(set(res))
 class Solution:
     # @param {int[]} nums1 an integer array
     # @param {int[]} nums2 an integer array
