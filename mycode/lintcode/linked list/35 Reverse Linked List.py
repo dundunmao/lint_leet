@@ -26,7 +26,11 @@ class Solution:
             pre = cur
             cur = temp
         return pre
-
+def reverseList(self, head):
+    pre, cur = None, head
+    while cur:
+        cur.next, pre, cur = pre, cur, cur.next
+    return pre
 
 class Solution_recursive(object):
     def reverseList(self, head):
@@ -48,3 +52,16 @@ class Solution_recursive(object):
             temp.next = reversedList
             reversedList = temp
             return self.helper(cur, reversedList)
+
+
+
+
+class Solution(object):
+    def reverseList(self, head):
+        return self.helper(head, None)
+
+    def helper(self, head, pre):
+        if not head:
+            return pre
+        cur, head.next = head.next, pre
+        return self.helper(cur, head)

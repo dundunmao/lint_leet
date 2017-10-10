@@ -1,82 +1,46 @@
-# the way that I did in the interview
-def revers_string(string):
-    if string is None or len(string) < 2:
-        return string
-    res = ''
-    i = 0
-    record_start = [0]
-    record_end = []
-    # find the start point and end point of the continous letters repeatd more than twice
-    while i + 1 < len(string):
-        if string[i] != string[i+1]:
-            i += 1
-        else:
-            j = i + 1
-            count = 1
-            while j < len(string) and string[i] == string[j]:
-                count += 1
-                j += 1
-            if count >= 3:
-                record_start.append(j)
-                record_end.append(i)
-            i = j
-    record_end.append(len(string))
-    # composit the string slices,delete the repeat parts
-    for i in range(len(record_start)):
-        res += string[record_start[i]:record_end[i]]
-    # reverse it
-
-    res = list(res)
-    return reverse_string(res)
-
-# another way that I thought you expect for
-def revers_string_another(string):
-    if string is None or len(string) < 2:
-        return string
-    res = []
-    i = 0
-    # travese the string, append every char in res, jump the  if meet 3 or more repeat char
-    while i < len(string):
-        j = i+1
-        count = 1
-        if j < len(string) and string[i] != string[j]:
-            res.append(string[i])
-            i += 1
-        elif j < len(string) and string[i] == string[j]:
-            while j < len(string) and string[i] == string[j]:
-                count += 1
-                j += 1
-            if count < 3:
-                res += [string[i]] + [string[j - 1]]
-            i = j
-        elif i < len(string):
-            res.append(string[i])
-            i += 1
-    if len(res) == []:
+def substring(s1,s2):
+    if s1 is None or s2 is None:
         return ''
-    # reverse the res
-    return reverse_string(res)
+    res = []
+    count = float('-inf')
+    for i in range(len(s1)):
+        for j in range(len(s2)):
+            temp = i
+            while temp<len(s1) and j<len(s2) and s1[temp] == s2[j]:
+                temp += 1
+                j += 1
+            if count < temp - i + 1:
+                count = temp - i + 1
+                res.append(s1[i:temp])
+    return len(res)
 
+def permute(n):
+    if n == 0:
+        return []
+    nums = [i for i in range(1,n+1)]
+    lo = 0
+    hi = len(nums) - 1
+    res = []
+    return helper(nums,lo,hi,res)
 
-# reverse method
-def reverse_string(array):
-    i= 0
-    j = len(array) - 1
-    while i<j:
-        array[i],array[j] = array[j],array[i]
-        i += 1
-        j -= 1
-    return ''.join(array)
+def helper(nums, lo, hi,res):
+    if lo == hi:
+        return [[nums[lo]]]
+    temp = helper(nums,lo+1,hi,res)
+    array = []
+    for ele in temp:
+        if ele == []:
+            x = [nums[lo]]
+            array.append(x)
+        else:
+            for k in range(0,len(ele)+1):
+                ele.insert(k,nums[lo])
+                array.append(ele[:])
+                del ele[k]
+    return array[:]
 
 if __name__ == "__main__":
     # unittest.main()
-    assert revers_string('aabccccdda')== 'addbaa'
-    assert revers_string('aaa') == ''
-    assert revers_string('aa') == 'aa'
-    assert revers_string('ab') == 'ba'
-
-
-    assert revers_string_another('aabccccdda')== 'addbaa'
-    assert revers_string_another('aaa') == ''
-    assert revers_string_another('aa') == 'aa'
-    assert revers_string_another('ab') == 'ba'
+    a = [1,2]
+    print permute(3)
+    # print substring('abcabcbfgeb','abcfgeb')

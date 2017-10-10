@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/209. Minimum Size Subarray Sum.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -114,8 +114,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="277" />
-    <option name="y" value="53" />
+    <option name="x" value="193" />
+    <option name="y" value="38" />
     <option name="width" value="1177" />
     <option name="height" value="709" />
   </component>
@@ -373,7 +373,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="277" y="53" width="1177" height="709" extended-state="0" />
+    <frame x="193" y="38" width="1177" height="709" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24933921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -630,7 +630,7 @@
     <entry file="file://$PROJECT_DIR$/209. Minimum Size Subarray Sum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>

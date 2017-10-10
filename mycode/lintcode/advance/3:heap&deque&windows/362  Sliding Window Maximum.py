@@ -11,15 +11,17 @@ class Solution:
         result = []
         if len(nums) == 0:
             return []
+        # 每加入一个数前，先把比它小的都pop出去，维护一个递减的deque,就是如果要append的数比最后一个大，就要把前面的都比它小的都pop出去
+        # 这个循环是把前k-1个数都走完，保证下面的for循环是从第k个数开始走
         for i in range(0,k - 1):
-            while len(dq) != 0 and dq[-1] < nums[i]:  #踢.注意等于的不踢
+            while len(dq) != 0 and dq[-1] < nums[i]:  #踢.注意等于的不踢。
                 dq.pop()
             dq.append(nums[i])                        #加入
-
+        # 这个for从k开始走，要维护Windows的size=k。
         for j in range(k - 1, len(nums)):
-            while len(dq) != 0 and dq[-1] < nums[j]: #踢
+            while len(dq) != 0 and dq[-1] < nums[j]: # 每加入一个数前，先把比它小的都pop出去，维护递减deque，这样最左的数就是maxi
                 dq.pop()
-            dq.append(nums[j])                      #加入
+            dq.append(nums[j])                      #加一个数，下面就可以得到一个窗口最大值，dq未必size=k。
 
             result.append(dq[0])                     #最大值记录
 
@@ -132,6 +134,7 @@ class HashHeap:
             else:
                 self.swap(id,son) #否则就交换
             id = son
+
 class Solution1:
     """
     @param nums: A list of integers.
@@ -161,5 +164,6 @@ if __name__ == '__main__':
     k = 4
     nums = [1577, 330, 1775, 206,  1435, 1218]  #ans = [1775, 1775, 1775, 1435]
     k = 3
-
+    nums = [3,2,1,3,-1,-3,5,3,6,7]
+    k = 3
     print s.maxSlidingWindow(nums, k)

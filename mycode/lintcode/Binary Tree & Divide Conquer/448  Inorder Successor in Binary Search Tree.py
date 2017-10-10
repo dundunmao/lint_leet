@@ -21,19 +21,20 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-# 找到bst里某一个node的inorder的下一个node。就是求这个node右子树的root,如果没有右子树,就是他上面的root
+# 找到bst里某一个node的inorder的下一个node。就是求这个node右子树的最左点,如果没有右子树,就是他上一层的root
 class Solution(object):
-    """
-    @param root <TreeNode>: The root of the BST.
-    @param p <TreeNode>: You need find the successor node of p.
-    @return <TreeNode>: Successor of p.
-    """
     def inorderSuccessor(self, root, p):
-        # write your code here
-        result = None
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :rtype: TreeNode
+        """
+        if root is None:
+            return None
+        last_root = None
         while root != None and root.val != p.val:
             if root.val > p.val:
-                result = root   #只有往左子树走的时候,才把这个root记录着(因为当某个点无右子树时,他的下一个点是他的上一层,就是这个root),把左子树都走完了前一直是这个root
+                last_root = root   #只有往左子树走的时候,才把这个root记录着(因为当某个点无右子树时,他的下一个点是他的上一层,就是这个root),把左子树都走完了前一直是这个root
                 root = root.left
             else:
                 root = root.right
@@ -42,7 +43,10 @@ class Solution(object):
             return None
          #找到了，这个node右子树空，那他的下一个点就是他上层那个root
         if root.right is None:
-            return result.val
+            if last_root:
+                return last_root.val
+            else:
+                return None
          #如果有右子树，要找这个右子树的最小点
         root = root.right
         while root.left != None:

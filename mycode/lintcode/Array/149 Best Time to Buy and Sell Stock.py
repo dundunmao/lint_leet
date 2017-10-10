@@ -27,17 +27,17 @@ class Solution:
         return max_sum
 # 这个方法可用**
 # 每次记录最小的price和最大的profit
-
-    def maxProfit_leet(self, prices):
+    def maxProfit(self, prices):
         if prices is None or len(prices) == 0:
             return 0
-        mini = prices[0]
-        result = 0
+        mini = float('inf')
+        res = float('-inf')
         for i in range(len(prices)):
-            now = prices[i] - mini #在前面最低的一次买，当前次卖，得到的最新收益
-            result = max(result, now)  #最新收益跟之前最好收益取最大
-            mini = min(mini,prices[i])  #更新最低价
-        return result
+            mini = min(mini, prices[i])   #更新最低价
+            diff = prices[i] - mini       #如果今天卖，得到的最大收益，势必是要目前位置的最低那天买
+            res = max(res, diff)          #更新result
+        return res
+
 
 
 # 我的练习

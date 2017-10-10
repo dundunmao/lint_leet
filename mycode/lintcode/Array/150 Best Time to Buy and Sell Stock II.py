@@ -4,41 +4,23 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 给出一个数组样例[2,1,2,0,1], 返回 2
-class Solution:
-    """
-    @param prices: Given an integer array
-    @return: Maximum profit
-    """
-    def maxProfit(self, prices):
-        # write your code here
-        B = []
-        profit = 0
-        for i in range(1,len(prices)):
-            b = prices[i]-prices[i-1]
-            if b > 0:
-                profit += b
-        return profit
 
-# 我的练习
-class Solution2:
-    """
-    @param prices: Given an integer array
-    @return: Maximum profit
-    """
+
+# 只取连续的上升部分
+
+class Solution(object):
     def maxProfit(self, prices):
-        # write your code here
-        # edge case:
+        """
+        :type prices: List[int]
+        :rtype: int
+        多次买卖
+        """
         if prices is None or len(prices) == 0:
             return 0
-
-        le = len(prices)
-        profit = []
-        for i in range(1,le):
-            profit.append(prices[i] - prices[i-1])
-        max_profit = 0
-        for i in range(len(profit)):
-            if profit[i]>0:
-                max_profit += profit[i]
-        return max_profit
+        res = 0
+        for i in range(1,len(prices)):
+            if prices[i] > prices[i-1]:
+                res += prices[i]-prices[i-1]
+        return res
 
 
