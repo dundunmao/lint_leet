@@ -30,6 +30,25 @@ class Solution1(object):
         return True
 
 
+class Solution1(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        n = len(s)
+        res = ()
+        f = [[False for i in range(n)] for j in range(n)]  # 代表（i-j）这块的substring是不是palin
+        for i in range(n - 1, -1, -1):  # 从后往前走是因为f[i][j]是从f[i+1][j-1]得到的，要先知道后面的才行。
+            for j in range(i, n):
+                # j-i<3代表（char自己）&（两个挨着的char）& （俩char中间有个char）->取决两个数相等不。
+                # 不写这句会越界
+                if j - i < 3 or f[i + 1][j - 1]:  # ，f[i+1][j-1]就表示两边向外扩一位。
+                    f[i][j] = s[i] == s[j]
+                if f[i][j] and (res == () or j - i + 1 > res[1] - res[0]):
+                    # res = s[i:j+1]  不直接给substring而是记录始终点，因为s[i:j]是time killer
+                    res = (i, j + 1)
+        return s[res[0]:res[1]]
 
 
 

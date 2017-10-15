@@ -42,6 +42,8 @@ class Solution1(object):
             sb.append(carry)
         sb.reverse()
         return ''.join(sb)
+
+
 if __name__ == '__main__':
     s = Solution1()
     a = '11'

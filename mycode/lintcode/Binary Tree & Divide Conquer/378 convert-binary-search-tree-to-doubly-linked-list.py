@@ -19,7 +19,6 @@ class TreeNode:
         self.right = None
 # Definition of Doubly-ListNode
 class DoublyListNode(object):
-
     def __init__(self, val, next=None):
         self.val = val
         self.next = next
@@ -75,12 +74,10 @@ class Solution1:
         return result[0]
     def helper(self,root):
         if root is None:
-            return None
+            return [None,None]
         l = self.helper(root.left)
         r = self.helper(root.right)
         node = DoublyListNode(root.val)
-        first = None
-        last = None
         if l == None:
             first = node
         else:

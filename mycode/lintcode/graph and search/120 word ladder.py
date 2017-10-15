@@ -26,131 +26,36 @@
 #
 # 返回它的长度 5
 #
-# 九章 超时
-from Queue import Queue
-class Solution:
-    # @param start, a string: start = "hit"
-    # @param end, a string: end = "cog"
-    # @param dict, a set of string : dict = {"hot","dot","dog","lot","log"}
-    # @return an integer
-    def ladderLength(self, start, end, dict):
-        # write your code here
-        if dict is None:
-            return 0
-        if start == end:
-            return 1
-        dict.add(start)
-        dict.add(end)
-        hash = set()
-        hash.add(start)
-        queue = Queue()
-        queue.put(start)
-        length = 1
-        while not queue.empty():
-            length+=1
-            size = queue.qsize()
-            for i in range(0,size):
-                word = queue.get()
-                for next in self.get_next_word(word, dict):
-
-                    if next in hash:
-                        continue
-                    if next == end:
-                        return length
-                    hash.add(next)
-                    queue.put(next)
-        return 0
-    def repl(self, s, index, c):
-        new = list(s)
-        new[index] = c
-        return ''.join(new)
-    def get_next_word(self, word, dict):
-        next_array = []
-        al = 'abcdefghijklmnopqrstuvwxyz'
-        for c in al:
-            for i in range(0,len(word)):
-                if c == word[i]:
-                    continue
-                next = word.replace(word[i], c)
-                if next in dict:
-                    next_array.append(next)
-        return next_array
-# LeetCode 超时
-from Queue import Queue
-class Solution3(object):
-
+from collections import deque
+class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
         # write your code here
         if wordList is None or endWord not in wordList:
             return 0
         if beginWord == endWord:
             return 1
-        wordList.append(beginWord)
-        wordList.append(endWord)
-        q = Queue()
-        hash = {}
-        q.put(beginWord)
-        hash[beginWord] = True
-        layer = 0
-        while q.qsize()>0:
-            le = q.qsize()
-            layer += 1
+        q = deque()
+        hash = {beginWord:True}
+        q.append(beginWord)
+        count = 1
+        dict = {}
+        for word in wordList:   #这个要转成hash，不然后面遍历的时候会超时
+            dict[word] = True
+        while q:
+            le=len(q)
             for i in range(le):
-                cur = q.get()
-                # print cur
-                array = self.get_next_word(cur, wordList)
-                print array
-                for ele in array:
-                    if not hash.has_key(ele):
-                        if ele == endWord:
-                            return layer+1
-                        hash[ele] = True
-                        q.put(ele)
-        return 0
-    def get_next_word(self, word, wordList):
-        next_array = []
-        al = 'abcdefghijklmnopqrstuvwxyz'
-        for c in al:
-            for i in range(len(word)):
-                if c == word[i]:
-                    continue
-                new = self.repl(word, i, c)
-                if new in wordList:
-                    next_array.append(new)
-        return next_array
-
-    def repl(self, s, index, c):
-        new = list(s)
-        new[index] = c
-        return ''.join(new)
-
-class Solution:
-    # @param start, a string
-    # @param end, a string
-    # @param dict, a set of string
-    # @return an integer
-    def ladderLength(self, start, end, wordList):
-        wordSet = set([])
-        for word in wordList:
-            wordSet.add(word)
-
-        wordLen = len(start)
-        q = Queue()
-        q.put((start, 1))
-        # queue = collections.deque([(start, 1)])
-        while q.qsize()>0:
-            currWord, currLen = q.get()
-            if currWord == end:
-                return currLen
-            for i in xrange(wordLen):
-                part1 = currWord[:i]
-                part2 = currWord[i + 1:]
-                for j in 'abcdefghijklmnopqrstuvwxyz':
-                    if currWord[i] != j:
-                        nextWord = part1 + j + part2
-                        if nextWord in wordSet:
-                            q.put((nextWord, currLen + 1))
-                            wordSet.remove(nextWord)
+                cur = q.popleft()
+                if cur == endWord:
+                    return count
+                for j in range(len(cur)):
+                    part1 = cur[:j]
+                    part2 = cur[j + 1:]
+                    for cha in 'abcdefghijklmnopqrstuvwxyz':
+                        new = part1+cha+part2
+                        if new in dict and new not in hash:
+                            hash[new] = True
+                            q.append(new)
+            count +=1
         return 0
 # if __name__ == '__main__':
 #     start = 'hit'

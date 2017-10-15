@@ -10,7 +10,7 @@
 
 
 class Solution(object):
-    def divide(self, dividend, divisor):
+    def divide1(self, dividend, divisor):
         """
         :type dividend: int
         :type divisor: int
@@ -50,13 +50,34 @@ class Solution(object):
             count = count * 2
 
         return count_left, dividend_left
+    # 答案
+    def divide(self, dividend, divisor):
+        # write your code here
+        INT_MAX = 2147483647
+        if divisor == 0:
+            return INT_MAX
+        if dividend > 0 and divisor < 0 or dividend < 0 and divisor > 0:
+            neg = True
+        else:
+            neg = False
+        a = abs(dividend)
+        b = abs(divisor)
+        ans = 0
+        shift = 31
+        while shift >= 0:
+            if a >= (b << shift):  # 9<<3（左移3位）相当于9 * 2^3=9*8=72
+                a -= (b << shift)
+                ans += (1 << shift)  #1<<1（左移1位）相当于1 * 2^1=2
+            shift -= 1
+        if neg:
+            ans = - ans
+        if ans > INT_MAX:
+            return INT_MAX
+        return ans
 
 if __name__ == "__main__":
-    a = 10
-    b = 3
-
-    # [6, 5, 7],
-    # [4, 1, 8, 3]
+    a = 100
+    b = 9
     s = Solution()
     # print s.helper(b)
     print s.divide(a,b)

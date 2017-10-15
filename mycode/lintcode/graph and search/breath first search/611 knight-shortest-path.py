@@ -75,6 +75,45 @@ class Solution:
 
         return -1
 
+#     这个好
+from collections import deque
+class Solution1:
+    """
+    @param: grid: a chessboard included 0 (false) and 1 (true)
+    @param: source: a point
+    @param: destination: a point
+    @return: the shortest path
+    """
+    # def shortestPath(self, grid, source, destination):
+    #     # write your code here
+    def shortestPath(self, grid, source, destination):
+        # write your code here
+        if grid == [] or grid == [[]]:
+            return 0
+        q = deque()
+        q.append(source)
+        res = 0
+        coordination = [[1, 2], [1, -2], [-1, 2], [-1, -2], [2, 1], [2, -1], [-2, 1], [-2, -1]]
+        # coordination/ = [[1,0],[-1,0],[0,1],[0,-1]]
+        hash = {(source.x,source.y):True}
+        while q:
+            le = len(q)
+            for i in range(le):
+                cur = q.popleft()
+                if cur.x == destination.x and cur.y == destination.y:
+                    return res
+                else:
+                    #check four direction and append in q
+                    row = cur.x
+                    col = cur.y
+                    for k in coordination:
+                        new_i = row + k[0]
+                        new_j = col + k[1]
+                        if new_i>=0 and new_j>=0 and new_i < len(grid) and new_j < len(grid[0]) and grid[new_i][new_j] == 0 and (new_i,new_j) not in hash:
+                            q.append(Point(new_i,new_j))
+                            hash[(new_i,new_j)] = True
+            res += 1
+        return -1
 if __name__ == "__main__":
 
 
@@ -86,6 +125,6 @@ if __name__ == "__main__":
     C = Point(2,2)
     hash = {}
     hash[B] = 0
-    s = Solution()
+    s = Solution1()
 
     print s.shortestPath(A,B,C)
