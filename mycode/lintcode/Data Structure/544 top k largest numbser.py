@@ -20,9 +20,29 @@ class Solution:
         result = nums[-k:]
         result.reverse()
         return result
+
+import heapq
+# 正经的
+class Solution1:
+    '''
+    @param {int[]} nums an integer array
+    @param {int} k an integer
+    @return {int[]} the top k largest numbers in array
+    '''
+    def topk(self, nums, k):
+        # Write your code here
+        array = [-ele for ele in nums]
+        heapq.heapify(array)
+        res = []
+        for i in range(k):
+            res.append(-heapq.heappop(array))
+        return res
+
+
+
 import heapq
 
-class Solution:
+class Solution2:
     '''
     @param {int[]} nums an integer array
     @param {int} k an integer
