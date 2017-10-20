@@ -17,32 +17,32 @@
 # 给出候选数组[2,3,6,7]和目标数字7
 #
 # 返回 [[7],[2,2,3]]
-class Solution:
+class Solution(object):
     def combinationSum(self, candidates, target):
-        if candidates is None:
-            return []
-        result = []
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
         path = []
+        res = []
+        pos = 0
         candidates.sort()
-        self.helper_function(candidates, target, path, 0, result)
-        return result
-
-    def helper_function(self,candidates, target, path, index, result):
-        # result = []
-        if target == 0:
-            path_save = [x for x in path]
-            result.append(path_save)
-        prev = -1
-        for i in range(index, len(candidates)):
-            if candidates[i] > target:
-                break
-            if prev != -1 and prev == candidates[i]:
-                continue
-            path.append(candidates[i])
-            self.helper_function(candidates, target - candidates[i], path, i, result)
-            path.pop()
-
-            prev = candidates[i]
+        sum_up=0
+        self.helper(candidates,target,res,path,pos,sum_up)
+        return res
+    def helper(self,candidates,target,res,path,pos,sum_up):
+        if sum_up == target:   # 如果找到就return
+            res.append(path[:])
+            return
+        if sum_up > target:   #如果大了也return
+            return
+        for i in range(pos,len(candidates)):
+            path.append(candidates[i])  #把 i 这个值加path里
+            sum_up+= candidates[i]      #把 i 这个值加sum_up里
+            self.helper(candidates,target,res,path,i,sum_up)
+            sum_up-=path[-1]            #把 i 这个值从path里减掉
+            path.pop()                  #把 i 这个值从sum_up减掉
 
 class Solution1(object):
     def combinationSum(self, candidates, target):

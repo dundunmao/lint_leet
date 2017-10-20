@@ -67,42 +67,44 @@ class Solution:
 # 方法二: BFS
 # 从一个点出发，上下左右扩展，能扩展的queue里，每次从queue里拿node进行一次bfs
 # 复杂度：每个点只能参与一次bfs，所以是O（n）
-from Queue import Queue
-class Solution1:
-    # @param {boolean[][]} grid a boolean 2D matrix
-    # @return {int} an integer
+from collections import deque
+class Solution(object):
     def numIslands(self, grid):
-        # Write your code here
-        count = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j]:
-                    self.bfs_fill(grid,i,j)
-                    count+=1
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        if len(grid) == 0:
+            return 0
+        if len(grid[0]) == 0:
+            return 0
+        m = len(grid)
+        n = len(grid[0])
+        map = {}
+        direction = [[0,1],[0,-1],[1,0],[-1,0]]
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == '1':
+                    map[(i,j)] = True
+        count = len(map)
+        # print count
+        for ele in map:
+            if map[ele] == False:
+                continue
+            #for every ele do BFS
+            q = deque()
+            q.append(ele)
+            map[ele] = False
+            while q:
+                le= len(q)
+                for i in range(le):
+                    x,y = q.popleft()
+                    for dir in direction:
+                        if map.has_key(((x +dir[0]),(y+dir[1]))) and map[((x +dir[0]),(y+dir[1]))] == True:
+                            q.append(((x +dir[0]),(y+dir[1])))
+                            count -= 1
+                            map[((x +dir[0]),(y+dir[1]))]= False
         return count
-    def bfs_fill(self,grid,x,y):
-        grid[x][y] = False
-        n = len(grid)
-        m = len(grid[0])
-        q = Queue()
-        id = x*m + y
-        q.put(id)
-        while q.qsize() != 0:
-            id = q.get()
-            i = id / m
-            j = id % m
-            if i > 0 and grid[i-1][j]:
-                q.put((i-1)*m+j)
-                grid[i-1][j] = False
-            if i < n-1 and grid[i+1][j]:
-                q.put((i+1)*m+j)
-                grid[i+1][j] = False
-            if j>0 and grid[i][j-1]:
-                q.put(i*m+j-1)
-                grid[i][j-1] = False
-            if j < m - 1 and grid[i][j+1]:
-                q.put(i * m + j+1)
-                grid[i][j+1] = False
 # dfs
 # 这题用bfs不好,因为如果都是1,每个点都要遍历，递归深度太高，达到了n*m.
 # 是一个染色问题,从一个点出发去看在不在一个联通块,在的话,染色(标记).

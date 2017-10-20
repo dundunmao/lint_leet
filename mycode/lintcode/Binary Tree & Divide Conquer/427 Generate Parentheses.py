@@ -41,19 +41,19 @@ class Solution1(object):
         str = []
         left = 0
         right = 0
-        maxi = n
-        self.helper(array, str, left, right, maxi)
+        # maxi = n
+        self.helper(array, str, left, right, n)
         return [''.join(ele) for ele in array]
 
-    def helper(self, array, str, left, right, maxi):  # 按一定规则往str里加左右括号，一旦长度为n*2了，就放array里
-        if len(str) == maxi * 2:
-            array.append(str[:])
+    def helper(self, res, str, left, right, n):  # 按一定规则往str里加左右括号，一旦长度为n*2了，就放array里
+        if len(str) == n * 2:
+            res.append(str[:])
             return
-        if left < maxi:  # 如果left没都用了时，就加left
-            self.helper(array, str+['('], left + 1, right, maxi)
+        if left < n:  # 如果left没都用了时，就加left
+            self.helper(res, str+['('], left + 1, right, n)
         if right < left:  # 同时如果right比left少时，就加right
-            self.helper(array, str+[')'], left, right + 1, maxi)
-        # 上面两部是基于原因input的，不是一个改完另一个接着改
+            self.helper(res, str+[')'], left, right + 1, n)
+        # 上面两部是基于原有input的，不是一个改完另一个接着改
 if __name__ == "__main__":
     n = 3
     s = Solution1()

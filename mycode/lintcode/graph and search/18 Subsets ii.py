@@ -44,7 +44,24 @@ class Solution:
             self.helper(result, list, S, i + 1)
             repeat = list.pop()
 
-
+class Solution1(object):
+    def subsetsWithDup(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = [[]]
+        path = []
+        nums.sort()
+        self.helper(nums, res, path)
+        return res
+    def helper(self, nums, res, path):
+        for i in range(len(nums)):
+            path.append(nums[i])
+            if path not in res:
+                res.append(path[:])
+                self.helper(nums[i+1:], res, path)
+            path.pop()
 if __name__ == '__main__':
     S = [1,2,2]
     s = Solution()

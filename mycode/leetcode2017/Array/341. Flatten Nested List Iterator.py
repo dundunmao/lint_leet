@@ -20,7 +20,6 @@ class NestedInteger(object):
        @return True if this NestedInteger holds a single integer, rather than a nested list.
        :rtype bool
        """
-       if nestedList = NestedInteger()
 
    def getInteger(self):
        """

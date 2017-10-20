@@ -19,7 +19,27 @@
 #   [1,2],
 #   []
 # ]
-class Solution:
+
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if nums is None or len(nums) == 0:
+            return []
+        res = [[]]
+        path = []
+        self.helper(nums, res, path)
+        return res
+    def helper(self, nums, res, path):
+        for i in range(len(nums)):
+            path.append(nums[i])
+            res.append(path[:])
+            self.helper(nums[i+1:], res, path)
+            path.pop()
+
+class Solution1:
 
     def sum_subarray(self, arr):
         res = []
@@ -38,7 +58,7 @@ class Solution:
             self.helper(arr, res, array, i + 1)
             array.pop()
 
-class Solution1(object):
+class Solution2(object):
     def subsets(self, nums):
         """
         :type nums: List[int]
@@ -52,5 +72,5 @@ class Solution1(object):
 
 if __name__ == '__main__':
     S = [1,2,3]
-    s = Solution()
-    print s.subsets(S)
+    s = Solution1()
+    print s.sum_subarray(S)

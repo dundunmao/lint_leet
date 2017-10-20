@@ -67,14 +67,14 @@ class Solution1(object):
             '9': 'wxyz'
         }
         alfa = [] #把数字替换成对应字母串，存进这个array
-        for d in digits:
+        for d in digits:       #digit = '23'那么 alfa=[['a', 'b', 'c'], ['d', 'e', 'f']]
             alfa.append(list(tele[d]))
-        alfa[0] = [list(ele) for ele in alfa[0]]
+        alfa[0] = [list(ele) for ele in alfa[0]]   #这里alfa=[[['a'], ['b'], ['c']], ['d', 'e', 'f']]
         for i in range(1,len(alfa)):
-            alfa[0] = self.helper(alfa[0],alfa[i])  #把后面的ele往alfa的第一个ele里加
+            alfa[0] = self.helper(alfa[0],alfa[i])  #把后面的每一个ele往alfa的第一个ele里加
         return [ ''.join(ele) for ele in alfa[0]]
 
-    def helper(self, a, b):
+    def helper(self, a, b):   #把a,b合并。a=['a', 'b', 'c'],b=['d', 'e', 'f']
         res = []
         for ele_a in a:
             for ele_b in b:
@@ -83,7 +83,34 @@ class Solution1(object):
                 ele_a.pop()
 
         return res
+class Solution2(object):
+    def letterCombinations(self, digits):
+        """
+        :type digits: str
+        :rtype: List[str]
+        """
+        if len(digits) == 0:
+            return []
+        tele = {
+            '1': '*',
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz'
+        }
+        alfa = [] #把数字替换成对应字母串，存进这个array
+        for d in digits:       #digit = '23'那么 alfa=[['a', 'b', 'c'], ['d', 'e', 'f']]
+            alfa.append(list(tele[d]))
+        res = alfa[0]
+        for i in range(1,len(alfa)):
+            res = [x + y for x in res for y in alfa[i]]
+        return res
+
 if __name__ == "__main__":
-    d = '23'
-    s = Solution1()
+    d = '234'
+    s = Solution2()
     print s.letterCombinations(d)
