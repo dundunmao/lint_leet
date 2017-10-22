@@ -1,4 +1,4 @@
-1# coding:utf-8
+# coding:utf-8
 # 正如标题所述，你需要使用两个栈来实现队列的一些操作。
 #
 # 队列应支持push(element)，pop() 和 top()，其中pop是弹出队列中的第一个(最前面的)元素。
@@ -8,37 +8,13 @@
 # 您在真实的面试中是否遇到过这个题？ Yes
 # 样例
 # 比如push(1), pop(), push(2), push(3), top(), pop()，你应该返回1，2和2
-class MyQueue:
-
-    def __init__(self):
-        self.stack1 = []
-        self.stack2 = []
-
-    def push(self, element):
-        # write your code here
-        self.stack1.append(element)
-
-    def top(self):
-        # write your code here
-        # return the top element
-        return self.stack1[0]
-    def pop(self):
-        # write your code here
-        # pop and return the top element
-        for i in range(len(self.stack1)-1):
-            self.stack2.append(self.stack1.pop())
-        p = self.stack1.pop()
-        for i in range(len(self.stack2)):
-            self.stack1.append(self.stack2.pop())
-        return p
-
-
 class MyQueue(object):
+
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.array = []
+        self.stack1 = []
 
     def push(self, x):
         """
@@ -46,21 +22,21 @@ class MyQueue(object):
         :type x: int
         :rtype: void
         """
-        self.array.append(x)
+        self.stack1.append(x)
 
     def pop(self):
         """
         Removes the element from in front of queue and returns that element.
         :rtype: int
         """
-        if len(self.array) == 0:
+        if len(self.stack1) == 0:
             return None
-        x = []
-        for i in range(len(self.array)):
-            x.append(self.array.pop())
-        ans = x.pop()
-        while x:  # 注意这里是x的长度
-            self.array.append(x.pop())
+        stack2 = []
+        for i in range(len(self.stack1)):
+            stack2.append(self.stack1.pop())
+        ans = stack2.pop()
+        while stack2:  # 注意这里是x的长度
+            self.stack1.append(stack2.pop())
         return ans
 
     def peek(self):
@@ -68,14 +44,14 @@ class MyQueue(object):
         Get the front element.
         :rtype: int
         """
-        if len(self.array) == 0:
+        if len(self.stack1) == 0:
             return None
-        x = []
-        while self.array:
-            x.append(self.array.pop())
-        ans = x[-1]
-        while x:  # 注意这里是x的长度
-            self.array.append(x.pop())
+        stack2 = []
+        while self.stack1:
+            stack2.append(self.stack1.pop())
+        ans = stack2[-1]
+        while stack2:  # 注意这里是x的长度
+            self.stack1.append(stack2.pop())
         return ans
 
     def empty(self):
@@ -83,7 +59,77 @@ class MyQueue(object):
         Returns whether the queue is empty.
         :rtype: bool
         """
-        return len(self.array) == 0
+        return len(self.stack1) == 0
+# 求min-queue
+class MyQueue0(object):
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.stack1 = []
+        self.min_stack1 = []
+
+    def push(self, x):
+        """
+        Push element x to the back of queue.
+        :type x: int
+        :rtype: void
+        """
+        self.stack1.append(x)
+        if len(self.stack1) > 1:
+            self.min_stack1.append(min(x,self.min_stack1[-1]))
+        else:
+            self.min_stack1.append(x)
+    def pop(self):
+        """
+        Removes the element from in front of queue and returns that element.
+        :rtype: int
+        """
+        if len(self.stack1) == 0:
+            return None
+        stack2 = []
+        min_stack2 = []
+        for i in range(len(self.stack1)):
+            x = self.stack1.pop()
+            self.min_stack1.pop()
+            stack2.append(x)
+            if len(min_stack2) > 1:
+                min_stack2.append(min(x, min_stack2[-1]))
+            else:
+                min_stack2.append(x)
+        ans = stack2.pop()
+        min_stack2.pop()
+        while stack2:  # 注意这里是x的长度
+            cur = stack2.pop()
+            self.stack1.append(cur)
+            if len(self.stack1) > 1:
+                self.min_stack1.append(min(cur, self.min_stack1[-1]))
+            else:
+                self.min_stack1.append(cur)
+        return ans
+    def min_queue(self):
+        return self.min_stack1[-1]
+    def peek(self):
+        """
+        Get the front element.
+        :rtype: int
+        """
+        if len(self.stack1) == 0:
+            return None
+        stack2 = []
+        while self.stack1:
+            stack2.append(self.stack1.pop())
+        ans = stack2[-1]
+        while stack2:  # 注意这里是x的长度
+            self.stack1.append(stack2.pop())
+        return ans
+
+    def empty(self):
+        """
+        Returns whether the queue is empty.
+        :rtype: bool
+        """
+        return len(self.stack1) == 0
 
 
 # Your MyQueue object will be instantiated and called as such:
@@ -113,5 +159,7 @@ if __name__ == '__main__':
     print s.push(7)
     print s.push(8)
     print s.push(9)
+    print s.min_queue()
     print s.pop()
     print s.pop()
+    print s.min_queue()

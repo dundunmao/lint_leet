@@ -20,7 +20,7 @@
 # 0 --- 2
 #      / \
 #      \_/
-from Queue import Queue
+from collections import deque
 class UndirectedGraphNode:
     def __init__(self, x):
         self.label = x
@@ -51,25 +51,22 @@ class Solution:
                 new_node.neighbors.append(new_neighbor)
         return hash.get(node)
 
-
+    # 用BFS来traverse图找到所有点，用hash存起来
     def getNodes(self,node):
-        queue = Queue()
+        queue = deque()
         set = {}
-        queue.put(node)
+        queue.append(node)
         set[node] = True
-        while not queue.empty():
-            head = queue.get()
+        while len(queue) != 0:
+            head = queue.popleft()
             for neighbor in head.neighbors:
                 if not set.has_key(neighbor):
                     set[neighbor] = True
-                    queue.put(neighbor)
+                    queue.append(neighbor)
         return set
 
 
-class UndirectedGraphNode:
-    def __init__(self, x):
-        self.label = x
-        self.neighbors = []
+
 from Queue import Queue
 
 

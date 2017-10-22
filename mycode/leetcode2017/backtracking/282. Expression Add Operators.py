@@ -46,9 +46,64 @@ class Solution(object):
             else:
                 self.helper(res, path + '+' + cur, num, target, i + 1, val+int(cur), int(cur))
                 self.helper(res, path + '-' +cur, num, target, i + 1, val-int(cur), -int(cur))
-                # from'1 + 2 + 3'to '1 + 2 + 3 * 4 ',需要 (1 + 2 + 3) - 3 + (3 * 4).
+                # from'1 + 2 + 3' to '1 + 2 + 3 * 4 ',需要 (1 + 2 + 3) - 3 + (3 * 4).
                 self.helper(res, path + '*' +cur, num, target, i + 1, val-multed+multed*int(cur), multed*int(cur))
 
+
+class Solution(object):
+    def addOperators(self, num, target):
+        """
+        :type num: str
+        :type target: int
+        :rtype: List[str]
+        """
+        self.ans = []
+        self.target = target
+        for i in xrange(1, len(num) + 1):
+            if i > 1 and num[0] == '0':
+                continue
+            self.helper(num[i:], int(num[:i]), num[:i], int(num[:i]), '#')
+
+        return self.ans
+
+    def helper(self, num, current, tmpAns, pre_val, pre_op):
+        if not num:
+            if self.target == current:
+                self.ans.append(tmpAns)
+            return
+
+        for i in xrange(1, len(num) + 1):
+            if i > 1 and num[0] == '0':
+                continue
+            now = int(num[:i])
+            self.helper(num[i:], current + now, tmpAns + '+' + num[:i], now, '+')
+            self.helper(num[i:], current - now, tmpAns + '-' + num[:i], now, '-')
+
+            if pre_op == '+':
+                self.helper(num[i:], current - pre_val + pre_val * now, tmpAns + '*' + num[:i], pre_val * now, pre_op)
+            elif pre_op == '-':
+                self.helper(num[i:], current + pre_val - pre_val * now, tmpAns + '*' + num[:i], pre_val * now, pre_op)
+            else:
+                self.helper(num[i:], current * now, tmpAns + '*' + num[:i], pre_val * now, pre_op)
+class Solution(object):
+    def addOperators(self, num, target):
+        res =[]
+        for i in range(1,len(num)+1):
+            if i == 1 or (i > 1 and num[0] != "0"): # prevent "00*" as a number
+                self.dfs(num[i:], num[:i], int(num[:i]), int(num[:i]), res, target) # this step put first number in the string
+        return res
+
+    def dfs(self, num, temp, cur, last, res, target):
+        if not num:
+            if cur == target:
+                res.append(temp)
+            return
+        for i in range(1, len(num)+1):
+            val = num[:i]
+            if i == 1 or (i > 1 and num[0] != "0"): # prevent "00*" as a number
+                self.dfs(num[i:], temp + "+" + val, cur+int(val), int(val), res, target)
+                self.dfs(num[i:], temp + "-" + val, cur-int(val), -int(val), res, target)
+                self.dfs(num[i:], temp + "*" + val, cur-last+last*int(val), last*int(val), res, target)
 if __name__ == "__main__":
     strs = "105"
     k = 5

@@ -27,12 +27,13 @@
 # 或者
 #
 # [0, 2, 3, 1, 5, 4]
+from collections import deque
 from Queue import Queue
 class DirectedGraphNode:
     def __init__(self, x):
         self.label = x
         self.neighbors = []
-
+# in-degree & out-degree法
 class Solution:
     """
     @param graph: A list of Directed graph node
@@ -41,23 +42,29 @@ class Solution:
     def topSort(self, graph):
         result = []
         hash = {}
+        # 把每个点加入hash里，value的in-dgree
         for x in graph:
             hash[x] = 0
-
+        # 把每个点的in-degree算出来
         for i in graph:
             for j in i.neighbors:
                 hash[j] += 1
-        q = Queue()
+        # BFS，先把所有in-degree为0的放queue里，并把他们都append到result里。
+        q = deque()
 
         for node2 in graph:
             if hash[node2] == 0:
-                q.put(node2)
+                q.append(node2)
                 result.append(node2)
-        while not q.empty():
-            node3 = q.get()
+        # 然后没popleft一个node，就把他们的邻居的in-degree 减1，边减边看in-degree是0，就加入queue和result里
+        while len(q) != 0:
+            node3 = q.popleft()
             for n in node3.neighbors:
-                hash[n] = hash.get(n) - 1
-                if hash.get(n) == 0:
+                hash[n] -= 1
+                if hash[n] == 0:
                     result.append(n)
-                    q.put(n)
+                    q.append(n)
+
         return result
+
+
